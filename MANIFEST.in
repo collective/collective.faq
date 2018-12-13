@@ -1,0 +1,4 @@
+graft src/kitconcept.faq
+graft docs
+include *.rst
+global-exclude *.pyc
