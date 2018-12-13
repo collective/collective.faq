@@ -10,6 +10,8 @@ kitconcept.faq
    :alt: kitconcept
    :target: https://kitconcept.com/
 
+.. image:: https://secure.travis-ci.org/collective/kitconcept.faq.png
+    :target: http://travis-ci.org/collective/kitconcept.faq
 
 Development
 -----------
@@ -34,25 +36,3 @@ Run Unit / Integration Tests::
 Run Robot Framework based acceptance tests::
 
   make test-acceptance
-
-
-Code
-----
-
-Code Repository: https://github.com/kitconcept/kitconceptfaq
-Continous Integration: https://jenkins.kitconcept.io/job/kitconcept/job/kitconceptfaq/
-
-
-Project Management
-------------------
-
-Trello: https://trello.com/ ...
-Harvest: ...
-
-
-Server
-------
-
-Live: ...
-Staging: kitconceptfaq.kitconcept.io (Deploy automatically from master branch)
-
