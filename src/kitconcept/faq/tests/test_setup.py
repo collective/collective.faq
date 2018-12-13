@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 """Setup tests for this package."""
-from Products.CMFCore.utils import getToolByName
 from kitconcept.faq.testing import KITCONCEPTFAQ_CORE_INTEGRATION_TESTING  # noqa
 from plone import api
 
@@ -21,25 +20,6 @@ class TestSetup(unittest.TestCase):
         """Test if kitconcept.faq is installed."""
         self.assertTrue(self.installer.isProductInstalled(
             'kitconcept.faq'))
-
-    # def test_plone_app_imagecropping_installed(self):
-    #     self.assertTrue(
-    #         self.installer.isProductInstalled(
-    #             'plone.app.imagecropping'
-    #         )
-    #     )
-
-    # def test_plone_restapi_installed(self):
-    #     self.assertTrue(
-    #         self.installer.isProductInstalled(
-    #             'plone.restapi'
-    #         )
-    #     )
-
-    # def test_news_item_renamed_to_meldung(self):
-    #     portal_types = getToolByName(self.portal, 'portal_types')
-    #     news_item_fti = getattr(portal_types, 'News Item')
-    #     self.assertEqual('Meldung', news_item_fti.title)
 
     def test_browserlayer(self):
         """Test that IKitconceptfaqCoreLayer is registered."""

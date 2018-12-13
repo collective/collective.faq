@@ -1,29 +1,7 @@
 # -*- coding: utf-8 -*-
-from datetime import datetime
-from datetime import timedelta
-from DateTime import DateTime
 from plone import api
-from plone.app.event.dx.behaviors import IEventBasic
-from plone.app.portlets.utils import assignment_mapping_from_key
-from plone.app.textfield.value import RichTextValue
-from plone.namedfile.file import NamedBlobImage
-from plone.portlets.constants import CONTEXT_CATEGORY
-from plone.portlets.interfaces import IPortletAssignmentMapping
-from plone.portlets.interfaces import IPortletManager
-from Products.CMFCore.utils import getToolByName
-from Products.CMFCore.WorkflowCore import WorkflowException
 from Products.CMFPlone.interfaces import INonInstallable
-from zope.component import getMultiAdapter
-from zope.component import getUtility
-from zope.component import queryUtility
-from zope.component.interfaces import IFactory
-from zope.container.interfaces import INameChooser
 from zope.interface import implementer
-from zope.interface import alsoProvides
-from plone.dexterity.utils import createContentInContainer
-
-import os
-import pytz
 
 
 @implementer(INonInstallable)
