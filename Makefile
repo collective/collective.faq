@@ -25,6 +25,11 @@ build: bin/buildout *.cfg
 	@echo "$(GREEN)==> Setup Build$(RESET)"
 	bin/buildout
 
+.PHONY: build-travis
+build-travis: bin/buildout *.cfg
+	@echo "$(GREEN)==> Setup Build$(RESET)"
+	bin/buildout -c travis.cfg
+
 bin/buildout: bin/pip
 	@echo "$(GREEN)==> Setup Virtual Env$(RESET)"
 	bin/pip install --upgrade pip

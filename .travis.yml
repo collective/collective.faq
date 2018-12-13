@@ -26,5 +26,5 @@ before_install:
 install:
   - sed -ie "s#plone-x.x.x.cfg#plone-$PLONE_VERSION.cfg#" travis.cfg
 script:
-  - make build
+  - make build-travis
   - make test
