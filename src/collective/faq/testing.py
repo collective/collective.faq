@@ -37,7 +37,6 @@ class CollectivefaqCoreLayer(PloneSandboxLayer):
         )
         logout()
         applyProfile(portal, 'collective.faq:default')
-        api.portal.set_registry_record('plone.default_language', u'en')
 
 
 COLLECTIVEFAQ_CORE_FIXTURE = CollectivefaqCoreLayer()
