@@ -2,18 +2,18 @@
     xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser"
     xmlns:plone="http://namespaces.plone.org/plone"
-    i18n_domain="kitconcept.faq">
+    i18n_domain="collective.faq">
 
   <!-- Set overrides folder for Just-a-Bunch-Of-Templates product -->
   <include package="z3c.jbot" file="meta.zcml" />
   <browser:jbot
       directory="overrides"
-      layer="kitconcept.faq.interfaces.IKitconceptfaqCoreLayer"
+      layer="collective.faq.interfaces.ICollectivefaqCoreLayer"
       />
 
   <!-- Publish static files -->
   <browser:resourceDirectory
-      name="kitconceptfaq"
+      name="collectivefaq"
       directory="static"
       />
 

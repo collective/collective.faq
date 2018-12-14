@@ -1,4 +1,4 @@
-graft src/kitconcept.faq
+graft src/collective.faq
 graft docs
 include *.rst
 global-exclude *.pyc

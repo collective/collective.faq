@@ -4,7 +4,7 @@
     xmlns:zcml="http://namespaces.zope.org/zcml"
     xmlns:i18n="http://namespaces.zope.org/i18n"
     xmlns:plone="http://namespaces.plone.org/plone"
-    i18n_domain="kitconcept.faq">
+    i18n_domain="collective.faq">
 
   <i18n:registerTranslations directory="locales" />
 
@@ -16,24 +16,24 @@
 
   <genericsetup:registerProfile
       name="default"
-      title="kitconcept.faq site (kitconcept.faq)"
+      title="collective.faq site (collective.faq)"
       directory="profiles/default"
-      description="Installs the kitconcept.faq add-on."
+      description="Installs the collective.faq add-on."
       provides="Products.GenericSetup.interfaces.EXTENSION"
       post_handler=".setuphandlers.post_install"
       />
 
   <genericsetup:registerProfile
       name="uninstall"
-      title="kitconcept.faq site (kitconcept.faq): uninstall"
+      title="collective.faq site (collective.faq): uninstall"
       directory="profiles/uninstall"
-      description="Uninstalls the kitconcept.faq add-on."
+      description="Uninstalls the collective.faq add-on."
       provides="Products.GenericSetup.interfaces.EXTENSION"
       post_handler=".setuphandlers.uninstall"
       />
 
   <utility
       factory=".setuphandlers.HiddenProfiles"
-      name="kitconcept.faq-hiddenprofiles" />
+      name="collective.faq-hiddenprofiles" />
 
 </configure>

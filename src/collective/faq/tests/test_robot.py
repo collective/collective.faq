@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from kitconcept.faq.testing import KITCONCEPTFAQ_CORE_ACCEPTANCE_TESTING  # noqa
+from collective.faq.testing import COLLECTIVEFAQ_CORE_ACCEPTANCE_TESTING  # noqa
 from plone.app.testing import ROBOT_TEST_LEVEL
 from plone.testing import layered
 
@@ -22,7 +22,7 @@ def test_suite():
         suite.addTests([
             layered(
                 robottestsuite,
-                layer=KITCONCEPTFAQ_CORE_ACCEPTANCE_TESTING
+                layer=COLLECTIVEFAQ_CORE_ACCEPTANCE_TESTING
             ),
         ])
     return suite

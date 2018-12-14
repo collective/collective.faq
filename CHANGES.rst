@@ -6,4 +6,4 @@ Changelog
 ------------------
 
 - Initial release.
-  [kitconcept]
+  [collective]

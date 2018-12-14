@@ -3,15 +3,15 @@
    This text does not appear on pypi or github. It is a comment.
 
 ==============================================================================
-kitconcept.faq
+collective.faq
 ==============================================================================
 
 .. image:: https://kitconcept.com/logo.svg
-   :alt: kitconcept
+   :alt: kitconcept, GmbH
    :target: https://kitconcept.com/
 
-.. image:: https://secure.travis-ci.org/collective/kitconcept.faq.png
-    :target: http://travis-ci.org/collective/kitconcept.faq
+.. image:: https://secure.travis-ci.org/collective/collective.faq.png
+    :target: http://travis-ci.org/collective/collective.faq
 
 Development
 -----------

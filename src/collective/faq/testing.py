@@ -13,10 +13,10 @@ from plone.app.testing import TEST_USER_ID
 from plone.app.testing import TEST_USER_NAME
 from plone.testing import z2
 
-import kitconcept.faq
+import collective.faq
 
 
-class KitconceptfaqCoreLayer(PloneSandboxLayer):
+class CollectivefaqCoreLayer(PloneSandboxLayer):
 
     defaultBases = (PLONE_APP_CONTENTTYPES_FIXTURE,)
 
@@ -24,7 +24,7 @@ class KitconceptfaqCoreLayer(PloneSandboxLayer):
         # Load any other ZCML that is required for your tests.
         # The z3c.autoinclude feature is disabled in the Plone fixture base
         # layer.
-        self.loadZCML(package=kitconcept.faq)
+        self.loadZCML(package=collective.faq)
 
     def setUpPloneSite(self, portal):
         setRoles(portal, TEST_USER_ID, ['Manager'])
@@ -36,30 +36,30 @@ class KitconceptfaqCoreLayer(PloneSandboxLayer):
             container=portal
         )
         logout()
-        applyProfile(portal, 'kitconcept.faq:default')
+        applyProfile(portal, 'collective.faq:default')
         api.portal.set_registry_record('plone.default_language', u'en')
 
 
-KITCONCEPTFAQ_CORE_FIXTURE = KitconceptfaqCoreLayer()
+COLLECTIVEFAQ_CORE_FIXTURE = CollectivefaqCoreLayer()
 
 
-KITCONCEPTFAQ_CORE_INTEGRATION_TESTING = IntegrationTesting(
-    bases=(KITCONCEPTFAQ_CORE_FIXTURE,),
-    name='KitconceptfaqCoreLayer:IntegrationTesting'
+COLLECTIVEFAQ_CORE_INTEGRATION_TESTING = IntegrationTesting(
+    bases=(COLLECTIVEFAQ_CORE_FIXTURE,),
+    name='CollectivefaqCoreLayer:IntegrationTesting'
 )
 
 
-KITCONCEPTFAQ_CORE_FUNCTIONAL_TESTING = FunctionalTesting(
-    bases=(KITCONCEPTFAQ_CORE_FIXTURE, z2.ZSERVER_FIXTURE),
-    name='KitconceptfaqCoreLayer:FunctionalTesting'
+COLLECTIVEFAQ_CORE_FUNCTIONAL_TESTING = FunctionalTesting(
+    bases=(COLLECTIVEFAQ_CORE_FIXTURE, z2.ZSERVER_FIXTURE),
+    name='CollectivefaqCoreLayer:FunctionalTesting'
 )
 
 
-KITCONCEPTFAQ_CORE_ACCEPTANCE_TESTING = FunctionalTesting(
+COLLECTIVEFAQ_CORE_ACCEPTANCE_TESTING = FunctionalTesting(
     bases=(
-        KITCONCEPTFAQ_CORE_FIXTURE,
+        COLLECTIVEFAQ_CORE_FIXTURE,
         REMOTE_LIBRARY_BUNDLE_FIXTURE,
         z2.ZSERVER_FIXTURE
     ),
-    name='KitconceptfaqCoreLayer:AcceptanceTesting'
+    name='CollectivefaqCoreLayer:AcceptanceTesting'
 )

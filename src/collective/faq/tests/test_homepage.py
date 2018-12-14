@@ -6,15 +6,15 @@ from plone.app.testing import setRoles
 from plone.dexterity.interfaces import IDexterityFTI
 from plone import api
 
-from kitconcept.faq.testing import KITCONCEPTFAQ_CORE_INTEGRATION_TESTING  # noqa
-from kitconcept.faq.interfaces import IHomepage
+from collective.faq.testing import COLLECTIVEFAQ_CORE_INTEGRATION_TESTING  # noqa
+from collective.faq.interfaces import IHomepage
 
 import unittest
 
 
 class KontaktIntegrationTest(unittest.TestCase):
 
-    layer = KITCONCEPTFAQ_CORE_INTEGRATION_TESTING
+    layer = COLLECTIVEFAQ_CORE_INTEGRATION_TESTING
 
     def setUp(self):
         """Custom shared utility setup for tests."""

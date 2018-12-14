@@ -1,5 +1,5 @@
 ====================
-kitconceptfaq
+collectivefaq
 ====================
 
 User documentation

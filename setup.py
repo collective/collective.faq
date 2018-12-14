@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Installer for the kitconcept.faq package."""
+"""Installer for the collective.faq package."""
 
 from setuptools import find_packages
 from setuptools import setup
@@ -13,7 +13,7 @@ long_description = '\n\n'.join([
 
 
 setup(
-    name='kitconcept.faq',
+    name='collective.faq',
     version='1.0.0a1',
     description='',
     long_description=long_description,
@@ -28,12 +28,12 @@ setup(
         "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
     ],
     keywords='Python Plone',
-    author='kitconcept GmbH',
-    author_email='info@kitconcept.com',
-    url='https://github.com/kitconcept/kitconcept.faq',
+    author='collective GmbH',
+    author_email='info@collective.com',
+    url='https://github.com/collective/collective.faq',
     license='GPL version 2',
     packages=find_packages('src', exclude=['ez_setup']),
-    namespace_packages=['kitconcept'],
+    namespace_packages=['collective'],
     package_dir={'': 'src'},
     include_package_data=True,
     zip_safe=False,

@@ -1,4 +1,4 @@
-kitconceptfaq Copyright 2018, kitconcept GmbH
+collectivefaq Copyright 2018, collective GmbH
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License version 2

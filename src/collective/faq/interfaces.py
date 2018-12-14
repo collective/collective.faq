@@ -4,7 +4,7 @@ from zope.publisher.interfaces.browser import IDefaultBrowserLayer
 from plone.supermodel import model
 
 
-class IKitconceptfaqCoreLayer(IDefaultBrowserLayer):
+class ICollectivefaqCoreLayer(IDefaultBrowserLayer):
     """Marker interface that defines a browser layer."""
 
 
