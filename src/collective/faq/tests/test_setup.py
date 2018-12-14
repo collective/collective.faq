@@ -67,7 +67,7 @@ class TestUninstall(unittest.TestCase):
                 self.installer.is_product_installed('collective.faq')
             )
         else:
-            self.assertTrue(
+            self.assertFalse(
                 self.installer.isProductInstalled(
                     'collective.faq'
                 )
