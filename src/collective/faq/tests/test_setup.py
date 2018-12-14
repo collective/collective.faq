@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Setup tests for this package."""
 from collective.faq.testing import COLLECTIVEFAQ_CORE_INTEGRATION_TESTING  # noqa
-# from plone import api
+from plone import api
 
 try:
     from Products.CMFPlone.utils import get_installer
@@ -21,17 +21,23 @@ class TestSetup(unittest.TestCase):
     def setUp(self):
         """Custom shared utility setup for tests."""
         self.portal = self.layer['portal']
-        # self.installer = api.portal.get_tool('portal_quickinstaller')
-        self.installer = get_installer(self.portal)
+        if HAS_INSTALLER:
+            self.installer = get_installer(self.portal)
+        else:
+            self.installer = api.portal.get_tool('portal_quickinstaller')
 
     def test_product_installed(self):
         """Test if collective.faq is installed."""
-        self.assertTrue(
-            # self.installer.isProductInstalled(
-            #     'collective.faq'
-            # )
-            self.installer.is_product_installed('collective.faq')
-        )
+        if HAS_INSTALLER:
+            self.assertTrue(
+                self.installer.is_product_installed('collective.faq')
+            )
+        else:
+            self.assertTrue(
+                self.installer.isProductInstalled(
+                    'collective.faq'
+                )
+            )
 
     def test_browserlayer(self):
         """Test that ICollectivefaqCoreLayer is registered."""
@@ -48,15 +54,24 @@ class TestUninstall(unittest.TestCase):
     def setUp(self):
         self.portal = self.layer['portal']
         self.installer = get_installer(self.portal)
-        # self.installer = api.portal.get_tool('portal_quickinstaller')
-        # self.installer.uninstallProducts(['collective.faq'])
-        self.installer.uninstall_product('collective.faq')
+        if HAS_INSTALLER:
+            self.installer.uninstall_product('collective.faq')
+        else:
+            self.installer = api.portal.get_tool('portal_quickinstaller')
+            self.installer.uninstallProducts(['collective.faq'])
 
     def test_product_uninstalled(self):
         """Test if collective.faq is cleanly uninstalled."""
-        self.assertFalse(
-            self.installer.is_product_installed('collective.faq')
-        )
+        if HAS_INSTALLER:
+            self.assertFalse(
+                self.installer.is_product_installed('collective.faq')
+            )
+        else:
+            self.assertTrue(
+                self.installer.isProductInstalled(
+                    'collective.faq'
+                )
+            )
 
     def test_browserlayer_removed(self):
         """Test that ICollectivefaqCoreLayer is removed."""
