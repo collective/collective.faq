@@ -30,6 +30,12 @@ build-travis: bin/buildout *.cfg
 	@echo "$(GREEN)==> Setup Build$(RESET)"
 	bin/buildout -c travis.cfg
 
+build-py3:
+	virtualenv --python=python3 .
+	bin/pip install --upgrade pip
+	bin/pip install -r requirements.txt
+	bin/buildout -c plone-5.2.x.cfg
+
 bin/buildout: bin/pip
 	@echo "$(GREEN)==> Setup Virtual Env$(RESET)"
 	bin/pip install --upgrade pip
