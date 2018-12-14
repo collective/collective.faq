@@ -53,8 +53,8 @@ class TestUninstall(unittest.TestCase):
 
     def setUp(self):
         self.portal = self.layer['portal']
-        self.installer = get_installer(self.portal)
         if HAS_INSTALLER:
+            self.installer = get_installer(self.portal)
             self.installer.uninstall_product('collective.faq')
         else:
             self.installer = api.portal.get_tool('portal_quickinstaller')
