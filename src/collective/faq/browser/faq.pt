@@ -7,15 +7,17 @@
       i18n:domain="collective.faq">
   <body>
     <metal:content-core fill-slot="content-core">
-      <ul>
+      <ul class="faq">
         <tal:questions repeat="item view/questions">
           <li tal:define="obj item/getObject"
               tal:condition="python: not view.nested_item(obj)">
-            <a tal:attributes="href string:${obj/absolute_url}/${item/id}"
+            <i class="glyphicon glyphicon-plus"></i>
+            <a class="faq-question"
+               tal:attributes="href obj/absolute_url"
                tal:content="obj/title">
               Question
             </a>
-            <div property="answer" class=""
+            <div class="faq-answer"
                 tal:define="answer obj/answer/output | nothing"
                 tal:condition="answer">
               <div tal:content="structure answer">
@@ -25,18 +27,22 @@
           </li>
           <li tal:define="obj item/getObject"
               tal:condition="python: view.nested_item(obj)">
-            <a tal:attributes="href string:${obj/absolute_url}/${item/id}"
+            <i class="glyphicon glyphicon-minus"></i>
+            <a class="faq-nested-title"
+               tal:attributes="href obj/absolute_url"
                tal:content="obj/title">
               Nested FAQ
             </a>
-            <ul>
+            <ul class="faq-nested">
               <tal:nested repeat="nested python: view.questions(faq=obj)">
                 <li tal:define="nested_obj nested/getObject">
-                  <a tal:attributes="href string:${nested_obj/absolute_url}/${nested/id}"
+                  <i class="glyphicon glyphicon-plus"></i>
+                  <a class="faq-question"
+                     tal:attributes="href nested_obj/absolute_url"
                      tal:content="nested_obj/title">
                     Question
                   </a>
-                  <div property="answer" class=""
+                  <div class="faq-answer"
                       tal:define="answer nested_obj/answer/output | nothing"
                       tal:condition="answer">
                     <div tal:content="structure answer">

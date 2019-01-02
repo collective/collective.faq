@@ -1,0 +1,11 @@
+.faq {
+    padding: 0;
+}
+.faq,
+.faq-nested {
+    list-style: none;
+}
+.faq li > .glyphicon-plus + .faq-question + .faq-answer,
+.faq li > .glyphicon-plus + .faq-nested-title + .faq-nested {
+    display: none;
+}
