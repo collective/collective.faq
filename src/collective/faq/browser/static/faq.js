@@ -1,15 +1,21 @@
 $(function() {
-  $('.faq li > .glyphicon').on('click', function(e) {
+  $('.faq .glyphicon').on('click', function(e) {
     e.preventDefault();
     var $el = $(this);
-    $el.toggleClass(function() {
-      if ($el.hasClass('glyphicon-plus')) {
-        $el.removeClass('glyphicon-plus');
-        return 'glyphicon-minus';
-      } else {
-        $el.removeClass('glyphicon-minus');
-        return 'glyphicon-plus';
-      }
-    });
+    if ($el.hasClass('glyphicon-plus')) {
+      $el.removeClass('glyphicon-plus');
+      $el.addClass('glyphicon-minus');
+    } else {
+      $el.removeClass('glyphicon-minus');
+      $el.addClass('glyphicon-plus');
+    }
+  });
+  $('.faq-toggle-answers').on('click', function(e) {
+    e.preventDefault();
+    $('.faq .faq-li-question .glyphicon').trigger('click');
+  });
+  $('.faq-toggle-categories').on('click', function(e) {
+    e.preventDefault();
+    $('.faq .faq-li-nested .glyphicon').trigger('click');
   });
 });

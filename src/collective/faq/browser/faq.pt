@@ -7,9 +7,16 @@
       i18n:domain="collective.faq">
   <body>
     <metal:content-core fill-slot="content-core">
+      <button class="faq-toggle-answers">
+        Show or Hide Answers
+      </button>
+      <button class="faq-toggle-categories">
+        Show or Hide Categories
+      </button>
       <ul class="faq">
         <tal:questions repeat="item view/questions">
-          <li tal:define="obj item/getObject"
+          <li class="faq-li-question"
+              tal:define="obj item/getObject"
               tal:condition="python: not view.nested_item(obj)">
             <i class="glyphicon glyphicon-plus"></i>
             <a class="faq-question"
@@ -25,7 +32,8 @@
               </div>
             </div>
           </li>
-          <li tal:define="obj item/getObject"
+          <li class="faq-li-nested"
+              tal:define="obj item/getObject"
               tal:condition="python: view.nested_item(obj)">
             <i class="glyphicon glyphicon-minus"></i>
             <a class="faq-nested-title"
@@ -35,7 +43,8 @@
             </a>
             <ul class="faq-nested">
               <tal:nested repeat="nested python: view.questions(faq=obj)">
-                <li tal:define="nested_obj nested/getObject">
+                <li class="faq-li-question"
+                    tal:define="nested_obj nested/getObject">
                   <i class="glyphicon glyphicon-plus"></i>
                   <a class="faq-question"
                      tal:attributes="href nested_obj/absolute_url"
