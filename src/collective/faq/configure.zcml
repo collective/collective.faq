@@ -16,18 +16,18 @@
 
   <genericsetup:registerProfile
       name="default"
-      title="collective.faq site (collective.faq)"
+      title="FAQ (collective.faq)"
       directory="profiles/default"
-      description="Installs the collective.faq add-on."
+      description="Installs the FAQ add-on."
       provides="Products.GenericSetup.interfaces.EXTENSION"
       post_handler=".setuphandlers.post_install"
       />
 
   <genericsetup:registerProfile
       name="uninstall"
-      title="collective.faq site (collective.faq): uninstall"
+      title="FAQ (collective.faq): uninstall"
       directory="profiles/uninstall"
-      description="Uninstalls the collective.faq add-on."
+      description="Uninstalls the FAQ add-on."
       provides="Products.GenericSetup.interfaces.EXTENSION"
       post_handler=".setuphandlers.uninstall"
       />
