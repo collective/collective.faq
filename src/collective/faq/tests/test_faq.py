@@ -7,12 +7,12 @@ from plone.dexterity.interfaces import IDexterityFTI
 from plone import api
 
 from collective.faq.testing import COLLECTIVEFAQ_CORE_INTEGRATION_TESTING  # noqa
-from collective.faq.interfaces import IHomepage
+from collective.faq.interfaces import IFAQ
 
 import unittest
 
 
-class KontaktIntegrationTest(unittest.TestCase):
+class FAQIntegrationTest(unittest.TestCase):
 
     layer = COLLECTIVEFAQ_CORE_INTEGRATION_TESTING
 
@@ -21,26 +21,26 @@ class KontaktIntegrationTest(unittest.TestCase):
         self.portal = self.layer['portal']
         setRoles(self.portal, TEST_USER_ID, ['Manager'])
         self.installer = api.portal.get_tool('portal_quickinstaller')
-        fti = queryUtility(IDexterityFTI, name='Homepage')
+        fti = queryUtility(IDexterityFTI, name='FAQ')
         fti.global_allow = True
 
     def test_schema(self):
-        fti = queryUtility(IDexterityFTI, name='Homepage')
+        fti = queryUtility(IDexterityFTI, name='FAQ')
         schema = fti.lookupSchema()
-        self.assertEqual(IHomepage, schema)
+        self.assertEqual(IFAQ, schema)
 
     def test_fti(self):
-        fti = queryUtility(IDexterityFTI, name='Homepage')
+        fti = queryUtility(IDexterityFTI, name='FAQ')
         self.assertTrue(fti)
 
     def test_factory(self):
-        fti = queryUtility(IDexterityFTI, name='Homepage')
+        fti = queryUtility(IDexterityFTI, name='FAQ')
         factory = fti.factory
         obj = createObject(factory)
-        self.assertTrue(IHomepage.providedBy(obj))
+        self.assertTrue(IFAQ.providedBy(obj))
 
     def test_adding(self):
-        self.portal.invokeFactory('Homepage', 'Homepage')
+        self.portal.invokeFactory('FAQ', 'faq')
         self.assertTrue(
-            IHomepage.providedBy(self.portal['Homepage'])
+            IFAQ.providedBy(self.portal['faq'])
         )
