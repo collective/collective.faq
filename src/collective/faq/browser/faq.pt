@@ -11,7 +11,7 @@
         <tal:questions repeat="item view/questions">
           <li tal:define="obj item/getObject"
               tal:condition="python: not view.nested_item(obj)">
-            <a tal:attributes="href string:${view/context/absolute_url}/${item/id}"
+            <a tal:attributes="href string:${obj/absolute_url}/${item/id}"
                tal:content="obj/title">
               Question
             </a>
@@ -25,14 +25,14 @@
           </li>
           <li tal:define="obj item/getObject"
               tal:condition="python: view.nested_item(obj)">
-            <a tal:attributes="href string:${view/context/absolute_url}/${item/id}"
+            <a tal:attributes="href string:${obj/absolute_url}/${item/id}"
                tal:content="obj/title">
               Nested FAQ
             </a>
             <ul>
               <tal:nested repeat="nested python: view.questions(faq=obj)">
                 <li tal:define="nested_obj nested/getObject">
-                  <a tal:attributes="href string:${view/context/absolute_url}/${nested/id}"
+                  <a tal:attributes="href string:${nested_obj/absolute_url}/${nested/id}"
                      tal:content="nested_obj/title">
                     Question
                   </a>

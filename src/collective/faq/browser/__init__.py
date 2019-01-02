@@ -12,11 +12,12 @@ class FAQView(DefaultView):
         provides = [IFAQItem]
         if not faq:
             faq = self.context
-            provides += IFAQ
+            provides += [IFAQ]
         return api.content.find(
             context=faq,
             depth=1,
             object_provides=provides,
+            sort_on='getObjPositionInParent',
         )
 
     def nested_item(self, obj):
