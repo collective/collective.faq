@@ -7,10 +7,12 @@
       i18n:domain="collective.faq">
   <body>
     <metal:content-core fill-slot="content-core">
-      <button class="faq-toggle-answers">
+      <button class="faq-toggle-answers"
+              i18n:translate="">
         Show or Hide Answers
       </button>
-      <button class="faq-toggle-categories">
+      <button class="faq-toggle-categories"
+              i18n:translate="">
         Show or Hide Categories
       </button>
       <ul class="faq">

@@ -6,7 +6,7 @@
 # locales/[language]/LC_MESSAGES/collectivefaq.po
 # (e.g. locales/de/LC_MESSAGES/collectivefaq.po)
 
-domain=collectivefaq
+domain=collective.faq
 
 i18ndude rebuild-pot --pot $domain.pot --create $domain ../
 i18ndude sync --pot $domain.pot */LC_MESSAGES/$domain.po
