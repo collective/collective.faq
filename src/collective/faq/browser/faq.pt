@@ -1,0 +1,54 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="collective.faq">
+  <body>
+    <metal:content-core fill-slot="content-core">
+      <ul>
+        <tal:questions repeat="item view/questions">
+          <li tal:define="obj item/getObject"
+              tal:condition="python: not view.nested_item(obj)">
+            <a tal:attributes="href string:${view/context/absolute_url}/${item/id}"
+               tal:content="obj/title">
+              Question
+            </a>
+            <div property="answer" class=""
+                tal:define="answer obj/answer/output | nothing"
+                tal:condition="answer">
+              <div tal:content="structure answer">
+                Answer
+              </div>
+            </div>
+          </li>
+          <li tal:define="obj item/getObject"
+              tal:condition="python: view.nested_item(obj)">
+            <a tal:attributes="href string:${view/context/absolute_url}/${item/id}"
+               tal:content="obj/title">
+              Nested FAQ
+            </a>
+            <ul>
+              <tal:nested repeat="nested python: view.questions(faq=obj)">
+                <li tal:define="nested_obj nested/getObject">
+                  <a tal:attributes="href string:${view/context/absolute_url}/${nested/id}"
+                     tal:content="nested_obj/title">
+                    Question
+                  </a>
+                  <div property="answer" class=""
+                      tal:define="answer nested_obj/answer/output | nothing"
+                      tal:condition="answer">
+                    <div tal:content="structure answer">
+                      Answer
+                    </div>
+                  </div>
+                </li>
+              </tal:nested>
+            </ul>
+          </li>
+        </tal:questions>
+      </ul>
+    </metal:content-core>
+  </body>
+</html>
