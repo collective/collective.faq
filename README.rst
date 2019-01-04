@@ -9,14 +9,14 @@ collective.faq
 .. image:: https://secure.travis-ci.org/collective/collective.faq.png
     :target: http://travis-ci.org/collective/collective.faq
 
-.. image:: https://travis-ci.org/kitconcept/collective.faq.svg?branch=master
-    :target: https://travis-ci.org/kitconcept/collective.faq
+.. image:: https://travis-ci.org/collective/collective.faq.svg?branch=master
+    :target: https://travis-ci.org/collective/collective.faq
 
-.. image:: https://coveralls.io/repos/kitconcept/collective.faq/badge.svg
-  :target: https://coveralls.io/r/kitconcept/collective.faq
+.. image:: https://coveralls.io/repos/collective/collective.faq/badge.svg
+  :target: https://coveralls.io/r/collective/collective.faq
 
-.. image:: https://landscape.io/github/kitconcept/collective.faq/master/landscape.svg?style=flat
-  :target: https://landscape.io/github/kitconcept/collective.faq/master
+.. image:: https://landscape.io/github/collective/collective.faq/master/landscape.svg?style=flat
+  :target: https://landscape.io/github/collective/collective.faq/master
   :alt: Code Health
 
 .. image:: https://img.shields.io/pypi/v/collective.faq.svg
@@ -29,7 +29,7 @@ collective.faq
 
 |
 
-.. image:: https://raw.githubusercontent.com/kitconcept/pas.plugins.memberpropertytogroup/master/kitconcept.png
+.. image:: https://raw.githubusercontent.com/collective/collective.faq/master/kitconcept.png
    :alt: kitconcept
    :target: https://kitconcept.com/
 
