@@ -13,8 +13,26 @@
 
   <!-- Publish static files -->
   <browser:resourceDirectory
-      name="collectivefaq"
+      name="collective.faq"
       directory="static"
+      />
+
+  <browser:page
+      name="view"
+      for="..interfaces.IFAQ"
+      class=".FAQView"
+      template="faq.pt"
+      permission="zope2.View"
+      layer="..interfaces.ICollectivefaqCoreLayer"
+      />
+
+  <browser:page
+      name="view"
+      for="..interfaces.IFAQItem"
+      class=".FAQItemView"
+      template="faq_item.pt"
+      permission="zope2.View"
+      layer="..interfaces.ICollectivefaqCoreLayer"
       />
 
 </configure>

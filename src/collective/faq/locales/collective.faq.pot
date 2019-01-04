@@ -1,0 +1,68 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2019-01-04 13:20+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.faq\n"
+
+#: ../interfaces.py:35
+msgid "Answer"
+msgstr ""
+
+#: ../interfaces.py:29
+msgid "Detailed Question"
+msgstr ""
+
+#: ../profiles/default/types/FAQ.xml
+#: ../profiles/default/types/FAQ_Item.xml
+msgid "Edit"
+msgstr ""
+
+#: ../profiles/default/types/FAQ.xml
+msgid "FAQ"
+msgstr ""
+
+#: ../configure.zcml:24
+msgid "FAQ (collective.faq)"
+msgstr ""
+
+#: ../configure.zcml:33
+msgid "FAQ (collective.faq): uninstall"
+msgstr ""
+
+#: ../profiles/default/types/FAQ_Item.xml
+msgid "FAQ Item"
+msgstr ""
+
+#: ../configure.zcml:24
+msgid "Installs the FAQ add-on."
+msgstr ""
+
+#: ../interfaces.py:23
+msgid "Question"
+msgstr ""
+
+#: ../browser/faq.pt:10
+msgid "Show/Hide All"
+msgstr ""
+
+#: ../configure.zcml:33
+msgid "Uninstalls the FAQ add-on."
+msgstr ""
+
+#: ../profiles/default/types/FAQ.xml
+#: ../profiles/default/types/FAQ_Item.xml
+msgid "View"
+msgstr ""

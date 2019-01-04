@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <object name="portal_types" meta_type="Plone Types Tool">
-  <object name="FAQ" meta_type="Dexterity FTI"/>
-  <object name="FAQ Item" meta_type="Dexterity FTI"/>
+  <object name="FAQ" remove="true"/>
+  <object name="FAQ Item" remove="true"/>
 </object>

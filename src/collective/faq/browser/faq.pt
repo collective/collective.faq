@@ -1,0 +1,78 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="collective.faq">
+  <body>
+    <metal:content-core fill-slot="content-core">
+      <button class="faq-toggle-answers"
+              i18n:translate="">
+        Show/Hide All
+      </button>
+      <ul class="faq">
+        <tal:questions repeat="item view/questions">
+          <li class="faq-li-question"
+              tal:define="obj item/getObject"
+              tal:condition="python: not view.nested_item(obj)">
+            <i class="glyphicon glyphicon-plus"></i>
+            <a class="faq-question"
+               tal:attributes="href obj/absolute_url"
+               tal:content="obj/title">
+              Question
+            </a>
+            <div class="faq-detailed-question"
+               tal:content="obj/detailed_question">
+              Detailed Question
+            </div>
+            <div class="faq-answer"
+                tal:define="answer obj/answer/output | nothing"
+                tal:condition="answer">
+              <div tal:content="structure answer">
+                Answer
+              </div>
+            </div>
+          </li>
+          <li class="faq-li-nested"
+              tal:define="obj item/getObject"
+              tal:condition="python: view.nested_item(obj)">
+            <a class="faq-nested-title"
+               tal:attributes="href obj/absolute_url"
+               tal:content="obj/title">
+              Nested FAQ
+            </a>
+            <div class="faq-nested-description"
+               tal:content="obj/description">
+              Nested FAQ Description
+            </div>
+            <ul class="faq-nested">
+              <tal:nested repeat="nested python: view.questions(faq=obj)">
+                <li class="faq-li-question"
+                    tal:define="nested_obj nested/getObject">
+                  <i class="glyphicon glyphicon-plus"></i>
+                  <a class="faq-question"
+                     tal:attributes="href nested_obj/absolute_url"
+                     tal:content="nested_obj/title">
+                    Question
+                  </a>
+                  <div class="faq-detailed-question"
+                     tal:content="nested_obj/detailed_question">
+                    Detailed Question
+                  </div>
+                  <div class="faq-answer"
+                      tal:define="answer nested_obj/answer/output | nothing"
+                      tal:condition="answer">
+                    <div tal:content="structure answer">
+                      Answer
+                    </div>
+                  </div>
+                </li>
+              </tal:nested>
+            </ul>
+          </li>
+        </tal:questions>
+      </ul>
+    </metal:content-core>
+  </body>
+</html>
