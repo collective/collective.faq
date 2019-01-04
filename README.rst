@@ -37,13 +37,14 @@ collective.faq
 Features
 --------
 
-- todo
+- Add FAQ content object
+- Add FAQ item to existing FAQ content object
 
 
 Installation
 ------------
 
-Install pas.plugins.memberpropertytogroup by adding it to your buildout::
+Install collective.faq by adding it to your buildout::
 
    [buildout]
 
