@@ -64,4 +64,8 @@ code-analysis: ## Run static code analysis
 	@echo "$(GREEN)==> Run static code analysis$(RESET)"
 	bin/code-analysis
 
+.PHONY: release
+release: ## Make releaser
+	bin/fullrelease
+
 .PHONY: all clean
