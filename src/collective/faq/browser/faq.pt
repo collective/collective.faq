@@ -9,11 +9,7 @@
     <metal:content-core fill-slot="content-core">
       <button class="faq-toggle-answers"
               i18n:translate="">
-        Show or Hide Answers
-      </button>
-      <button class="faq-toggle-categories"
-              i18n:translate="">
-        Show or Hide Categories
+        Show/Hide All
       </button>
       <ul class="faq">
         <tal:questions repeat="item view/questions">
@@ -26,6 +22,10 @@
                tal:content="obj/title">
               Question
             </a>
+            <div class="faq-detailed-question"
+               tal:content="obj/detailed_question">
+              Detailed Question
+            </div>
             <div class="faq-answer"
                 tal:define="answer obj/answer/output | nothing"
                 tal:condition="answer">
@@ -37,12 +37,15 @@
           <li class="faq-li-nested"
               tal:define="obj item/getObject"
               tal:condition="python: view.nested_item(obj)">
-            <i class="glyphicon glyphicon-minus"></i>
             <a class="faq-nested-title"
                tal:attributes="href obj/absolute_url"
                tal:content="obj/title">
               Nested FAQ
             </a>
+            <div class="faq-nested-description"
+               tal:content="obj/description">
+              Nested FAQ Description
+            </div>
             <ul class="faq-nested">
               <tal:nested repeat="nested python: view.questions(faq=obj)">
                 <li class="faq-li-question"
@@ -53,6 +56,10 @@
                      tal:content="nested_obj/title">
                     Question
                   </a>
+                  <div class="faq-detailed-question"
+                     tal:content="nested_obj/detailed_question">
+                    Detailed Question
+                  </div>
                   <div class="faq-answer"
                       tal:define="answer nested_obj/answer/output | nothing"
                       tal:condition="answer">

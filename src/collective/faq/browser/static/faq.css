@@ -5,7 +5,17 @@
 .faq-nested {
     list-style: none;
 }
+.faq .faq-detailed-question,
+.faq .faq-nested-description {
+    font-weight: normal;
+}
 .faq .glyphicon-plus + .faq-question + .faq-answer,
-.faq .glyphicon-plus + .faq-nested-title + .faq-nested {
+.faq .glyphicon-plus + .faq-question + .faq-detailed-question + .faq-answer {
     display: none;
+}
+.faq .faq-answer {
+    margin: 1em;
+    padding: 0.5em;
+    border: thin dotted;
+    background-color: #EFF7FF;
 }

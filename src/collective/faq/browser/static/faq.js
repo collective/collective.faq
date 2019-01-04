@@ -12,10 +12,11 @@ $(function() {
   });
   $('.faq-toggle-answers').on('click', function(e) {
     e.preventDefault();
-    $('.faq .faq-li-question .glyphicon').trigger('click');
-  });
-  $('.faq-toggle-categories').on('click', function(e) {
-    e.preventDefault();
-    $('.faq .faq-li-nested .glyphicon').trigger('click');
+    var state = $('.faq .faq-li-question .glyphicon').first().hasClass('glyphicon-plus');
+    if (state) {
+      $('.faq .faq-li-question .glyphicon-plus').trigger('click');
+    } else {
+      $('.faq .faq-li-question .glyphicon-minus').trigger('click');
+    }
   });
 });

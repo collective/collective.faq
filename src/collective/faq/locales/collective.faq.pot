@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-01-02 21:57+0000\n"
+"POT-Creation-Date: 2019-01-04 13:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,8 +17,12 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: collective.faq\n"
 
-#: ../interfaces.py:29
+#: ../interfaces.py:35
 msgid "Answer"
+msgstr ""
+
+#: ../interfaces.py:29
+msgid "Detailed Question"
 msgstr ""
 
 #: ../profiles/default/types/FAQ.xml
@@ -51,11 +55,7 @@ msgid "Question"
 msgstr ""
 
 #: ../browser/faq.pt:10
-msgid "Show or Hide Answers"
-msgstr ""
-
-#: ../browser/faq.pt:14
-msgid "Show or Hide Categories"
+msgid "Show/Hide All"
 msgstr ""
 
 #: ../configure.zcml:33

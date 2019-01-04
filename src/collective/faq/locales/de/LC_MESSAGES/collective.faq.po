@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-01-02 21:57+0000\n"
+"POT-Creation-Date: 2019-01-04 13:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,13 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: collective.faq\n"
 
-#: ../interfaces.py:29
+#: ../interfaces.py:35
 msgid "Answer"
 msgstr "Antworten"
+
+#: ../interfaces.py:29
+msgid "Detailed Question"
+msgstr "Detaillierte Frage"
 
 #: ../profiles/default/types/FAQ.xml
 #: ../profiles/default/types/FAQ_Item.xml
@@ -51,12 +55,8 @@ msgid "Question"
 msgstr "Frage"
 
 #: ../browser/faq.pt:10
-msgid "Show or Hide Answers"
-msgstr "Antworten anzeigen oder ausblenden"
-
-#: ../browser/faq.pt:14
-msgid "Show or Hide Categories"
-msgstr "Kategorien anzeigen oder ausblenden"
+msgid "Show/Hide All"
+msgstr "Alle anzeigen / ausblenden"
 
 #: ../configure.zcml:33
 msgid "Uninstalls the FAQ add-on."
