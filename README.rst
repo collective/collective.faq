@@ -108,12 +108,12 @@ Credits
    :width: 434px
    :scale: 100 %
    :alt: HU Berlin
-   :align: center
+   :align: left
    :target: https://www.hu-berlin.de
 
 The development of this plugin has been kindly sponsored by `Humboldt-Universität zu Berlin`_.
 
-.. image:: https://raw.githubusercontent.com/kitconcept/pas.plugins.memberpropertytogroup/master/kitconcept.png
+.. image:: https://raw.githubusercontent.com/collective/collective.faq/master/kitconcept.png
    :alt: kitconcept
    :target: https://kitconcept.com/
 
