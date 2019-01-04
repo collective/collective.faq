@@ -1,4 +1,4 @@
 Contributors
 ============
 
-- collective GmbH, info@collective.com
+- kitconcept GmbH, info@kitconcept.com
