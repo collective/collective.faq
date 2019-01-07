@@ -5,7 +5,8 @@ Changelog
 1.0.0a3 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Fix README RST style.
+  [timo]
 
 
 1.0.0a2 (2019-01-07)
