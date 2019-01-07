@@ -15,10 +15,6 @@ collective.faq
 .. image:: https://coveralls.io/repos/collective/collective.faq/badge.svg
   :target: https://coveralls.io/r/collective/collective.faq
 
-.. image:: https://landscape.io/github/collective/collective.faq/master/landscape.svg?style=flat
-  :target: https://landscape.io/github/collective/collective.faq/master
-  :alt: Code Health
-
 .. image:: https://img.shields.io/pypi/v/collective.faq.svg
     :target: https://pypi.python.org/pypi/collective.faq/
     :alt: Latest Version
