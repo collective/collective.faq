@@ -45,6 +45,10 @@ Features
 - As anonymous user, I can see an FAQ list.
 - As anonymous user, I can search the FAQ and FAQ Entry.
 
+.. image:: https://raw.githubusercontent.com/collective/collective.faq/master/docs/collective.faq.gif
+   :alt: collective.faq
+   :target: https://github.com/collective/collective.faq
+
 
 Installation
 ------------
