@@ -12,9 +12,6 @@ collective.faq
 .. image:: https://travis-ci.org/collective/collective.faq.svg?branch=master
     :target: https://travis-ci.org/collective/collective.faq
 
-.. image:: https://coveralls.io/repos/collective/collective.faq/badge.svg
-  :target: https://coveralls.io/r/collective/collective.faq
-
 .. image:: https://img.shields.io/pypi/v/collective.faq.svg
     :target: https://pypi.python.org/pypi/collective.faq/
     :alt: Latest Version
