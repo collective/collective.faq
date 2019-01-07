@@ -12,7 +12,7 @@ Changelog
 --------------------
 
 - Add FAQ content type to displayed_types (which show up in the navigation).
- [rodfersou]
+  [rodfersou]
 
 
 1.0.0a1 (2019-01-04)
