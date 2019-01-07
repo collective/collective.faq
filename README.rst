@@ -6,9 +6,6 @@
 collective.faq
 ==============================================================================
 
-.. image:: https://secure.travis-ci.org/collective/collective.faq.png
-    :target: http://travis-ci.org/collective/collective.faq
-
 .. image:: https://travis-ci.org/collective/collective.faq.svg?branch=master
     :target: https://travis-ci.org/collective/collective.faq
 
