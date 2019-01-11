@@ -104,7 +104,6 @@ Credits
    :width: 434px
    :scale: 100 %
    :alt: HU Berlin
-   :align: left
    :target: https://www.hu-berlin.de
 
 |
