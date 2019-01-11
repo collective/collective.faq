@@ -1,4 +1,6 @@
 graft src/collective/faq
 graft docs
 include *.rst
+include *.png
+include *.txt
 global-exclude *.pyc
