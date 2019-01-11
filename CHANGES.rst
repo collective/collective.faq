@@ -5,7 +5,9 @@ Changelog
 1.0.0a4 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Fix MANIFEST.in to include zcml files.
+  This fixes https://github.com/collective/collective.faq/issues/3.
+  [timo]
 
 
 1.0.0a3 (2019-01-07)
