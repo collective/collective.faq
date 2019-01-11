@@ -35,6 +35,8 @@ Features
 - As anonymous user, I can see an FAQ list.
 - As anonymous user, I can search the FAQ and FAQ Entry.
 
+|
+
 .. image:: https://raw.githubusercontent.com/collective/collective.faq/master/docs/collective.faq.gif
    :alt: collective.faq
    :target: https://github.com/collective/collective.faq
@@ -105,7 +107,11 @@ Credits
    :align: left
    :target: https://www.hu-berlin.de
 
+|
+
 The development of this plugin has been kindly sponsored by `Humboldt-Universität zu Berlin`_.
+
+|
 
 .. image:: https://raw.githubusercontent.com/collective/collective.faq/master/kitconcept.png
    :alt: kitconcept
