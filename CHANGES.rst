@@ -5,7 +5,8 @@ Changelog
 1.0.0a4 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Add content type icons for Plone 4.3.
+  [rodfersou]
 
 
 1.0.0a3 (2019-01-07)

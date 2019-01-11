@@ -12,6 +12,14 @@
     import_steps="plone.app.registry"
     />
 
+  <genericsetup:upgradeDepends
+    source="1010"
+    destination="1011"
+    profile="collective.faq:default"
+    title="Show FAQ by default in navigation"
+    import_steps="typeinfo"
+    />
+
   <!-- <genericsetup:upgradeStep
     source="1001"
     destination="1002"
