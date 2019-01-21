@@ -1,7 +1,10 @@
 $(function() {
-  $('.faq .glyphicon').on('click', function(e) {
+  $('.faq .glyphicon, .faq-question').on('click', function(e) {
     e.preventDefault();
     var $el = $(this);
+    if ($el.hasClass('faq-question')) {
+      $el = $el.prev('.glyphicon');
+    }
     if ($el.hasClass('glyphicon-plus')) {
       $el.removeClass('glyphicon-plus');
       $el.addClass('glyphicon-minus');
