@@ -5,6 +5,9 @@ Changelog
 1.0.0a5 (unreleased)
 --------------------
 
+- Fix question link to expand item instead of navigate to question item.
+  [rodfersou]
+
 - Add content type icons for Plone 4.3.
   [rodfersou]
 
