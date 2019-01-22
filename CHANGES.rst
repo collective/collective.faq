@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0.0a5 (unreleased)
+1.0.0a5 (2019-01-22)
 --------------------
 
 - Fix question link to expand item instead of navigate to question item.
