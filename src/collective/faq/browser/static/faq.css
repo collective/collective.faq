@@ -23,16 +23,17 @@
 .faq .faq-nested-description {
     font-weight: normal;
 }
-.faq .glyphicon {
+.faq .glyphicon:before {
     display: inline-block;
+    content: ''
     width: 13px;
     height: 13px;
 }
-.faq .glyphicon-plus {
-    background: url(++resource++collective.faq/sprite.png) 0 0;
+.faq .glyphicon-plus:before {
+    background: url('++resource++collective.faq/sprite.png') 0 0;
 }
-.faq .glyphicon-minus {
-    background: url(++resource++collective.faq/sprite.png) -13px 0;
+.faq .glyphicon-minus:before {
+    background: url('++resource++collective.faq/sprite.png') -13px 0;
 }
 .faq .glyphicon-plus + .faq-question + .faq-answer,
 .faq .glyphicon-plus + .faq-question + .faq-detailed-question + .faq-answer {
