@@ -14,13 +14,32 @@
 .faq {
     padding: 0;
 }
-.faq,
-.faq-nested {
+#content .faq,
+#content .faq-nested {
     list-style: none;
+    margin: 0;
 }
 .faq .faq-detailed-question,
 .faq .faq-nested-description {
     font-weight: normal;
+}
+.faq .glyphicon:before {
+    /* Remove this when drop Plone 4.3 support */
+    content: ''
+}
+.faq .glyphicon {
+    /* Remove this when drop Plone 4.3 support */
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+}
+.faq .glyphicon-plus {
+    /* Remove this when drop Plone 4.3 support */
+    background: url('++resource++collective.faq/sprite.png') 0 0;
+}
+.faq .glyphicon-minus {
+    /* Remove this when drop Plone 4.3 support */
+    background: url('++resource++collective.faq/sprite.png') -13px 0;
 }
 .faq .glyphicon-plus + .faq-question + .faq-answer,
 .faq .glyphicon-plus + .faq-question + .faq-detailed-question + .faq-answer {
