@@ -5,7 +5,8 @@ Changelog
 1.0.0a6 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Add sprite for plus and minus icons for Plone 4.3.x.
+  [rodfersou]
 
 
 1.0.0a5 (2019-01-22)
