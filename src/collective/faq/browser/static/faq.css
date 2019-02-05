@@ -24,15 +24,17 @@
     font-weight: normal;
 }
 .faq .glyphicon:before {
-    display: inline-block;
     content: ''
+}
+.faq .glyphicon {
+    display: inline-block;
     width: 13px;
     height: 13px;
 }
-.faq .glyphicon-plus:before {
+.faq .glyphicon-plus {
     background: url('++resource++collective.faq/sprite.png') 0 0;
 }
-.faq .glyphicon-minus:before {
+.faq .glyphicon-minus {
     background: url('++resource++collective.faq/sprite.png') -13px 0;
 }
 .faq .glyphicon-plus + .faq-question + .faq-answer,
