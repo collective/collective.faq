@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0.0a6 (unreleased)
+1.0.0a6 (2019-02-05)
 --------------------
 
 - Add sprite for plus and minus icons for Plone 4.3.x.
