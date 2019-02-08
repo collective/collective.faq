@@ -5,7 +5,8 @@ Changelog
 1.0.0a7 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Use icons from old Products.Faq package.
+  [rodfersou]
 
 
 1.0.0a6 (2019-02-05)
