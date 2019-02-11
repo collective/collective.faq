@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../interfaces.py:35
 msgid "Answer"
-msgstr "Antworten"
+msgstr "Antwort"
 
 #: ../interfaces.py:29
 msgid "Detailed Question"
@@ -32,11 +32,11 @@ msgstr "Bearbeiten"
 
 #: ../profiles/default/types/FAQ.xml
 msgid "FAQ"
-msgstr ""
+msgstr "FAQ"
 
 #: ../configure.zcml:24
 msgid "FAQ (collective.faq)"
-msgstr ""
+msgstr "FAQ (collective.faq)"
 
 #: ../configure.zcml:33
 msgid "FAQ (collective.faq): uninstall"
@@ -44,11 +44,11 @@ msgstr "FAQ (collective.faq): deinstallieren"
 
 #: ../profiles/default/types/FAQ_Item.xml
 msgid "FAQ Item"
-msgstr "FAQ-Artikel"
+msgstr "FAQ-Eintrag"
 
 #: ../configure.zcml:24
 msgid "Installs the FAQ add-on."
-msgstr "Installiert das FAQ-Add-On."
+msgstr "Installiert das FAQ Add-On."
 
 #: ../interfaces.py:23
 msgid "Question"
@@ -65,4 +65,4 @@ msgstr "Deinstalliert das FAQ-Add-On."
 #: ../profiles/default/types/FAQ.xml
 #: ../profiles/default/types/FAQ_Item.xml
 msgid "View"
-msgstr "Aussicht"
+msgstr "Ansicht"
