@@ -37,6 +37,19 @@
 .faq .glyphicon-minus {
     background: url('++resource++collective.faq/sprite.png') -9px 0;
 }
+.faq .faq-question,
+.faq .faq-nested-title {
+    font-weight: bold;
+}
+.faq .faq-detailed-question {
+    margin-left: 1em;
+}
+#content .faq .faq-li-question {
+    margin-bottom: 1em;
+}
+#content .faq .faq-nested {
+    margin-top: 1em;
+}
 .faq .glyphicon-plus + .faq-question + .faq-answer,
 .faq .glyphicon-plus + .faq-question + .faq-detailed-question + .faq-answer {
     display: none;
