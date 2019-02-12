@@ -5,8 +5,8 @@ Changelog
 1.0.0a8 (unreleased)
 --------------------
 
-- Nothing changed yet.
-
+- Changed styles to match Products.Faq implementation
+  [rodfersou]
 
 1.0.0a7 (2019-02-11)
 --------------------
