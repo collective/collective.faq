@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0.0a9 (unreleased)
+1.0.0a9 (2019-02-12)
 --------------------
 
 - Fix translations.
