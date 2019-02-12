@@ -66,3 +66,11 @@ msgstr "Deinstalliert das FAQ-Add-On."
 #: collective/faq/profiles/default/types/FAQ_Item.xml
 msgid "View"
 msgstr "Ansicht"
+
+#: ../interfaces.py:37
+msgid "Meaningful sentences that explains the answer"
+msgstr "Einige aussagekräftige Sätze, die die Frage beantworten"
+
+#: ../interfaces.py:31
+msgid "More details on the question, if not evident from the title"
+msgstr "Details zur Fragestellung, sofern sie nicht aus dem Titel hervorgehen"
