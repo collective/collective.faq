@@ -5,7 +5,8 @@ Changelog
 1.0.0a9 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Fix translations.
+  [timo]
 
 
 1.0.0a8 (2019-02-12)
