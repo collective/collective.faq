@@ -14,7 +14,7 @@ long_description = '\n\n'.join([
 
 setup(
     name='collective.faq',
-    version='1.0.0a8-dev.0',
+    version='1.0.0a8',
     description='Plone addon package for managing FAQ sections',
     long_description=long_description,
     # Get more from https://pypi.python.org/pypi?%3Aaction=list_classifiers
