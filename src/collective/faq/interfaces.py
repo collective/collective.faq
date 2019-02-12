@@ -21,19 +21,18 @@ class IFAQItem(Interface):
 
     title = schema.TextLine(
         title=_(u'Question'),
-        description=u'The frequently asked question.',
         required=True,
     )
 
     detailed_question = schema.Text(
         title=_(u'Detailed Question'),
-        description=(
-            u'More details on the question, if not evident from the title.'),
+        description=_(
+            u'More details on the question, if not evident from the title'),
         required=False,
     )
 
     answer = RichText(
         title=_(u'Answer'),
-        description=u'Meaningful sentences that explains the answer.',
+        description=_(u'Meaningful sentences that explains the answer'),
         required=False,
     )
