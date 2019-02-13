@@ -20,6 +20,14 @@
     import_steps="typeinfo"
     />
 
+  <genericsetup:upgradeDepends
+    source="1011"
+    destination="1012"
+    profile="collective.faq:default"
+    title="Show FAQ by default in navigation"
+    import_steps="typeinfo"
+    />
+
   <!-- <genericsetup:upgradeStep
     source="1001"
     destination="1002"
