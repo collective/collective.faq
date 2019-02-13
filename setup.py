@@ -43,6 +43,12 @@ setup(
     zip_safe=False,
     install_requires=[
         'plone.api',
+        'plone.app.content',
+        'plone.app.contenttypes',
+        'plone.app.dexterity',
+        'plone.app.lockingbehavior',
+        'plone.app.relationfield',
+        'plone.app.versioningbehavior',
         'Products.GenericSetup>=1.8.2',
         'setuptools',
         'z3c.jbot',
