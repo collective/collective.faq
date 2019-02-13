@@ -41,7 +41,6 @@
     <element value="plone.app.versioningbehavior.behaviors.IVersionable" />
     <element value="plone.app.contenttypes.behaviors.tableofcontents.ITableOfContents"/>
     <element value="plone.app.lockingbehavior.behaviors.ILocking" />
-    <element value="plone.multilingualbehavior.interfaces.IDexterityTranslatable"/>
   </property>
 
   <!-- View information -->
