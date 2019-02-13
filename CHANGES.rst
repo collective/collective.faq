@@ -5,7 +5,8 @@ Changelog
 1.0.0a11 (unreleased)
 ---------------------
 
-- Nothing changed yet.
+- Remove multilingual behavior.
+  [rodfersou]
 
 
 1.0.0a10 (2019-02-13)
