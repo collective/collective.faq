@@ -60,3 +60,6 @@
     border: thin dotted;
     background-color: #EFF7FF;
 }
+h2 .faq-nested-title {
+    font-weight: normal !important;
+}
