@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-02-11 14:51+0000\n"
+"POT-Creation-Date: 2019-02-21 16:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: collective.faq\n"
 
-#: collective/faq/interfaces.py:36
+#: collective/faq/interfaces.py:35
 msgid "Answer"
 msgstr "Antwort"
 
-#: collective/faq/interfaces.py:29
+#: collective/faq/interfaces.py:28
 msgid "Detailed Question"
 msgstr "Detaillierte Frage"
 
@@ -50,13 +50,21 @@ msgstr "FAQ-Eintrag"
 msgid "Installs the FAQ add-on."
 msgstr "Installiert das FAQ Add-On."
 
+#: collective/faq/interfaces.py:36
+msgid "Meaningful sentences that explains the answer"
+msgstr "Einige aussagekräftige Sätze, die die Frage beantworten"
+
+#: collective/faq/interfaces.py:29
+msgid "More details on the question, if not evident from the title"
+msgstr "Details zur Fragestellung, sofern sie nicht aus dem Titel hervorgehen"
+
 #: collective/faq/interfaces.py:23
 msgid "Question"
 msgstr "Frage"
 
 #: collective/faq/browser/faq.pt:10
-msgid "Show/Hide All"
-msgstr "Alle anzeigen / ausblenden"
+msgid "Show/Hide all"
+msgstr "Alles anzeigen/verbergen"
 
 #: collective/faq/configure.zcml:33
 msgid "Uninstalls the FAQ add-on."
@@ -66,11 +74,3 @@ msgstr "Deinstalliert das FAQ-Add-On."
 #: collective/faq/profiles/default/types/FAQ_Item.xml
 msgid "View"
 msgstr "Ansicht"
-
-#: ../interfaces.py:37
-msgid "Meaningful sentences that explains the answer"
-msgstr "Einige aussagekräftige Sätze, die die Frage beantworten"
-
-#: ../interfaces.py:31
-msgid "More details on the question, if not evident from the title"
-msgstr "Details zur Fragestellung, sofern sie nicht aus dem Titel hervorgehen"
