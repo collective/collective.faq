@@ -2,8 +2,8 @@ Changelog
 =========
 
 
-1.0.0a12 (unreleased)
----------------------
+1.0.0 (2019-02-23)
+------------------
 
 - Add missing German translations.
   [rodfersou]
