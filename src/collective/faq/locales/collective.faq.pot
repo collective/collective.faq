@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-02-11 14:51+0000\n"
+"POT-Creation-Date: 2019-02-21 16:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: collective.faq\n"
 
-#: collective/faq/interfaces.py:36
+#: collective/faq/interfaces.py:35
 msgid "Answer"
 msgstr ""
 
-#: collective/faq/interfaces.py:29
+#: collective/faq/interfaces.py:28
 msgid "Detailed Question"
 msgstr ""
 
@@ -50,12 +50,20 @@ msgstr ""
 msgid "Installs the FAQ add-on."
 msgstr ""
 
+#: collective/faq/interfaces.py:36
+msgid "Meaningful sentences that explains the answer"
+msgstr ""
+
+#: collective/faq/interfaces.py:29
+msgid "More details on the question, if not evident from the title"
+msgstr ""
+
 #: collective/faq/interfaces.py:23
 msgid "Question"
 msgstr ""
 
 #: collective/faq/browser/faq.pt:10
-msgid "Show/Hide All"
+msgid "Show/Hide all"
 msgstr ""
 
 #: collective/faq/configure.zcml:33

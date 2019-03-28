@@ -2,10 +2,20 @@ Changelog
 =========
 
 
-1.0.0a12 (unreleased)
----------------------
+1.0.1 (unreleased)
+------------------
 
 - Nothing changed yet.
+
+
+1.0.0 (2019-02-23)
+------------------
+
+- Add missing German translations.
+  [rodfersou]
+
+- Fix headline styles.
+  [rodfersou]
 
 
 1.0.0a11 (2019-02-13)
