@@ -1,4 +1,5 @@
 Contributors
 ============
 
-- kitconcept GmbH, info@kitconcept.com
+- Timo Stollenwerk, stollenwerk@kitconcept.com
+- Rodrigo de Souza, souza@kitconcept.com
