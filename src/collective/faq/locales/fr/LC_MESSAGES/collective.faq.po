@@ -1,0 +1,76 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2019-04-15 10:44+0000\n"
+"PO-Revision-Date: 2019-04-15 10:44+0000\n"
+"Last-Translator: Laurent Lasudry <laurent@affinitic.be>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language-Code: fr\n"
+"Language-Name: French\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.faq\n"
+
+#: collective/faq/interfaces.py:35
+msgid "Answer"
+msgstr "Réponse"
+
+#: collective/faq/interfaces.py:28
+msgid "Detailed Question"
+msgstr "Question détaillée"
+
+#: collective/faq/profiles/default/types/FAQ.xml
+#: collective/faq/profiles/default/types/FAQ_Item.xml
+msgid "Edit"
+msgstr "Modifier"
+
+#: collective/faq/profiles/default/types/FAQ.xml
+msgid "FAQ"
+msgstr "FAQ"
+
+#: collective/faq/configure.zcml:24
+msgid "FAQ (collective.faq)"
+msgstr "FAQ (collective.faq)"
+
+#: collective/faq/configure.zcml:33
+msgid "FAQ (collective.faq): uninstall"
+msgstr "FAQ (collective.faq): désinstaller"
+
+#: collective/faq/profiles/default/types/FAQ_Item.xml
+msgid "FAQ Item"
+msgstr "Elément FAQ"
+
+#: collective/faq/configure.zcml:24
+msgid "Installs the FAQ add-on."
+msgstr "Installe le module FAQ."
+
+#: collective/faq/interfaces.py:36
+msgid "Meaningful sentences that explains the answer"
+msgstr "Texte qui détaille la réponse à la question"
+
+#: collective/faq/interfaces.py:29
+msgid "More details on the question, if not evident from the title"
+msgstr "Plus d'informations sur la question, si le titre ne suffit pas"
+
+#: collective/faq/interfaces.py:23
+msgid "Question"
+msgstr "Question"
+
+#: collective/faq/browser/faq.pt:10
+msgid "Show/Hide all"
+msgstr "Cacher/Afficher tout"
+
+#: collective/faq/configure.zcml:33
+msgid "Uninstalls the FAQ add-on."
+msgstr "Désinstalle le module FAQ."
+
+#: collective/faq/profiles/default/types/FAQ.xml
+#: collective/faq/profiles/default/types/FAQ_Item.xml
+msgid "View"
+msgstr "Voir"
