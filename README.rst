@@ -42,6 +42,15 @@ Features
    :target: https://github.com/collective/collective.faq
 
 
+Translations
+------------
+
+This product has been translated into
+
+- German
+- French
+
+
 Installation
 ------------
 
