@@ -29,7 +29,7 @@ Features
 
 - As reviewer, I can add an FAQ.
 - As reviewer, I can add an FAQ item to an FAQ.
-- As reviewer, I can add an FAQ item to an FAQ item.
+- As reviewer, I can add an FAQ item (a "subquestion") to an FAQ item.
 - As reviewer, I can use rich text to create an FAQ item.
 - As reviewer, I can link to an existing FAQ item.
 - As anonymous user, I can see an FAQ list.
