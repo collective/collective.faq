@@ -12,7 +12,6 @@ cache:
 env:
   jobs:
     - PLONE_VERSION=4.3.x
-    - PLONE_VERSION=5.0.x
     - PLONE_VERSION=5.1.x
     - PLONE_VERSION=5.2.x
 jobs:
@@ -20,13 +19,9 @@ jobs:
     - python: "3.7"
       env: PLONE_VERSION=4.3.x
     - python: "3.7"
-      env: PLONE_VERSION=5.0.x
-    - python: "3.7"
       env: PLONE_VERSION=5.1.x
     - python: "3.8"
       env: PLONE_VERSION=4.3.x
-    - python: "3.8"
-      env: PLONE_VERSION=5.0.x
     - python: "3.8"
       env: PLONE_VERSION=5.1.x
 before_install:
