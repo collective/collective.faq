@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.1.1 (unreleased)
+1.2.0 (2020-09-06)
 ------------------
 
 - Python 3.8 compatibility.
