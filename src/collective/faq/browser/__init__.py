@@ -17,7 +17,7 @@ class FAQView(DefaultView):
             context=faq,
             depth=1,
             object_provides=provides,
-            sort_on='getObjPositionInParent',
+            sort_on="getObjPositionInParent",
         )
 
     def nested_item(self, obj):

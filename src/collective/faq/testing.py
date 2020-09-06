@@ -27,16 +27,13 @@ class CollectivefaqCoreLayer(PloneSandboxLayer):
         self.loadZCML(package=collective.faq)
 
     def setUpPloneSite(self, portal):
-        setRoles(portal, TEST_USER_ID, ['Manager'])
+        setRoles(portal, TEST_USER_ID, ["Manager"])
         login(portal, TEST_USER_NAME)
         api.content.create(
-            type='Document',
-            id='front-page',
-            title='Welcome',
-            container=portal
+            type="Document", id="front-page", title="Welcome", container=portal
         )
         logout()
-        applyProfile(portal, 'collective.faq:default')
+        applyProfile(portal, "collective.faq:default")
 
 
 COLLECTIVEFAQ_CORE_FIXTURE = CollectivefaqCoreLayer()
@@ -44,13 +41,13 @@ COLLECTIVEFAQ_CORE_FIXTURE = CollectivefaqCoreLayer()
 
 COLLECTIVEFAQ_CORE_INTEGRATION_TESTING = IntegrationTesting(
     bases=(COLLECTIVEFAQ_CORE_FIXTURE,),
-    name='CollectivefaqCoreLayer:IntegrationTesting'
+    name="CollectivefaqCoreLayer:IntegrationTesting",
 )
 
 
 COLLECTIVEFAQ_CORE_FUNCTIONAL_TESTING = FunctionalTesting(
     bases=(COLLECTIVEFAQ_CORE_FIXTURE, z2.ZSERVER_FIXTURE),
-    name='CollectivefaqCoreLayer:FunctionalTesting'
+    name="CollectivefaqCoreLayer:FunctionalTesting",
 )
 
 
@@ -58,7 +55,7 @@ COLLECTIVEFAQ_CORE_ACCEPTANCE_TESTING = FunctionalTesting(
     bases=(
         COLLECTIVEFAQ_CORE_FIXTURE,
         REMOTE_LIBRARY_BUNDLE_FIXTURE,
-        z2.ZSERVER_FIXTURE
+        z2.ZSERVER_FIXTURE,
     ),
-    name='CollectivefaqCoreLayer:AcceptanceTesting'
+    name="CollectivefaqCoreLayer:AcceptanceTesting",
 )

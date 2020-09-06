@@ -18,29 +18,27 @@ class FAQIntegrationTest(unittest.TestCase):
 
     def setUp(self):
         """Custom shared utility setup for tests."""
-        self.portal = self.layer['portal']
-        setRoles(self.portal, TEST_USER_ID, ['Manager'])
-        self.installer = api.portal.get_tool('portal_quickinstaller')
-        fti = queryUtility(IDexterityFTI, name='FAQ')
+        self.portal = self.layer["portal"]
+        setRoles(self.portal, TEST_USER_ID, ["Manager"])
+        self.installer = api.portal.get_tool("portal_quickinstaller")
+        fti = queryUtility(IDexterityFTI, name="FAQ")
         fti.global_allow = True
 
     def test_schema(self):
-        fti = queryUtility(IDexterityFTI, name='FAQ')
+        fti = queryUtility(IDexterityFTI, name="FAQ")
         schema = fti.lookupSchema()
         self.assertEqual(IFAQ, schema)
 
     def test_fti(self):
-        fti = queryUtility(IDexterityFTI, name='FAQ')
+        fti = queryUtility(IDexterityFTI, name="FAQ")
         self.assertTrue(fti)
 
     def test_factory(self):
-        fti = queryUtility(IDexterityFTI, name='FAQ')
+        fti = queryUtility(IDexterityFTI, name="FAQ")
         factory = fti.factory
         obj = createObject(factory)
         self.assertTrue(IFAQ.providedBy(obj))
 
     def test_adding(self):
-        self.portal.invokeFactory('FAQ', 'faq')
-        self.assertTrue(
-            IFAQ.providedBy(self.portal['faq'])
-        )
+        self.portal.invokeFactory("FAQ", "faq")
+        self.assertTrue(IFAQ.providedBy(self.portal["faq"]))
