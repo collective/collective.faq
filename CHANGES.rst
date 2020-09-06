@@ -5,8 +5,11 @@ Changelog
 1.1.1 (unreleased)
 ------------------
 
+- Python 3.8 compatibility.
+  [tisto]
+
 - Use Dexterity names to avoid nasty interface lookup errors.
-  [timo]
+  [tisto]
 
 
 1.1.0 (2019-04-15)
