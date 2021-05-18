@@ -5,7 +5,9 @@ Changelog
 1.2.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Use Resource Registry to register CSS & JS for Plone 5+ (#20)
+  Keep cssregistry and jsregistry working for Plone 4
+  [laulaz]
 
 
 1.2.0 (2020-09-06)
