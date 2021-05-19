@@ -4,7 +4,7 @@ from zope.component import queryUtility
 from zope.component import createObject
 from plone.app.testing import setRoles
 from plone.dexterity.interfaces import IDexterityFTI
-from plone import api
+from Products.CMFPlone.utils import get_installer
 
 from collective.faq.testing import COLLECTIVEFAQ_CORE_INTEGRATION_TESTING  # noqa
 from collective.faq.interfaces import IFAQ
@@ -20,7 +20,7 @@ class FAQIntegrationTest(unittest.TestCase):
         """Custom shared utility setup for tests."""
         self.portal = self.layer["portal"]
         setRoles(self.portal, TEST_USER_ID, ["Manager"])
-        self.installer = api.portal.get_tool("portal_quickinstaller")
+        self.installer = get_installer(self.portal, self.layer["request"])
         fti = queryUtility(IDexterityFTI, name="FAQ")
         fti.global_allow = True
 

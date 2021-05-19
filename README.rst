@@ -42,6 +42,14 @@ Features
    :target: https://github.com/collective/collective.faq
 
 
+Compatibility
+-------------
+
+The versions 1.3.0 and above (releases from the master branch) are used for Plone 5.2 / Python 3.
+
+For Plone 4 and Plone 5.0/5.1 support, please use versions 1.2.x.
+
+
 Translations
 ------------
 
@@ -85,7 +93,7 @@ Development
 
 Requirements:
 
-- Python 2.7
+- Python 3.7
 - Virtualenv
 
 Setup::

@@ -16,7 +16,7 @@ long_description = "\n\n".join(
 
 setup(
     name="collective.faq",
-    version="1.2.1.dev0",
+    version="1.3.0.dev0",
     description="Plone addon package for managing FAQ sections",
     long_description=long_description,
     # Get more from https://pypi.python.org/pypi?%3Aaction=list_classifiers
@@ -24,12 +24,8 @@ setup(
         "Development Status :: 3 - Alpha",
         "Environment :: Web Environment",
         "Framework :: Plone",
-        "Framework :: Plone :: 4.3",
-        "Framework :: Plone :: 5.0",
-        "Framework :: Plone :: 5.1",
         "Framework :: Plone :: 5.2",
         "Programming Language :: Python",
-        "Programming Language :: Python :: 2.7",
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
         "Operating System :: OS Independent",

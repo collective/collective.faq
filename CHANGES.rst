@@ -2,11 +2,13 @@ Changelog
 =========
 
 
-1.2.1 (unreleased)
+1.3.0 (unreleased)
 ------------------
 
-- Use Resource Registry to register CSS & JS for Plone 5+ (#20)
-  Keep cssregistry and jsregistry working for Plone 4
+- Plone 5.2 compatibility
+  [laulaz]
+
+- Drop support for Plone 4, Plone 5.0 and Plone 5.1
   [laulaz]
 
 
