@@ -6,8 +6,9 @@
 collective.faq
 ==============================================================================
 
-.. image:: https://travis-ci.org/collective/collective.faq.svg?branch=master
-    :target: https://travis-ci.org/collective/collective.faq
+.. image:: https://github.com/collective/collective.faq/actions/workflows/ci.yml/badge.svg
+    :target: https://github.com/collective/collective.faq/actions/workflows/ci.yml
+    :alt: CI Status
 
 .. image:: https://img.shields.io/pypi/v/collective.faq.svg
     :target: https://pypi.python.org/pypi/collective.faq/
