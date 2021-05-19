@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.3.0 (unreleased)
+2.0.0 (unreleased)
 ------------------
 
 - Plone 5.2 compatibility
