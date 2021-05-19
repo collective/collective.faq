@@ -2,10 +2,14 @@ Changelog
 =========
 
 
-1.2.1 (unreleased)
+2.0.0 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Plone 5.2 compatibility
+  [laulaz]
+
+- Drop support for Plone 4, Plone 5.0 and Plone 5.1
+  [laulaz]
 
 
 1.2.0 (2020-09-06)

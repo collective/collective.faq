@@ -6,8 +6,9 @@
 collective.faq
 ==============================================================================
 
-.. image:: https://travis-ci.org/collective/collective.faq.svg?branch=master
-    :target: https://travis-ci.org/collective/collective.faq
+.. image:: https://github.com/collective/collective.faq/actions/workflows/ci.yml/badge.svg
+    :target: https://github.com/collective/collective.faq/actions/workflows/ci.yml
+    :alt: CI Status
 
 .. image:: https://img.shields.io/pypi/v/collective.faq.svg
     :target: https://pypi.python.org/pypi/collective.faq/
@@ -40,6 +41,14 @@ Features
 .. image:: https://raw.githubusercontent.com/collective/collective.faq/master/docs/collective.faq.gif
    :alt: collective.faq
    :target: https://github.com/collective/collective.faq
+
+
+Compatibility
+-------------
+
+The versions 2.0.0 and above (releases from the master branch) are used for Plone 5.2 / Python 3.
+
+For Plone 4 and Plone 5.0/5.1 support, please use versions 1.x.x.
 
 
 Translations
@@ -85,7 +94,7 @@ Development
 
 Requirements:
 
-- Python 2.7
+- Python 3.7
 - Virtualenv
 
 Setup::
