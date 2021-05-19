@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-2.0.0 (unreleased)
+2.0.0 (2021-05-19)
 ------------------
 
 - Plone 5.2 compatibility
