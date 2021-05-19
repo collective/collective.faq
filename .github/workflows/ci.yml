@@ -30,8 +30,6 @@ jobs:
             ${{ runner.os }}-pip-
 
       # python install
-      - run: pip install virtualenv
-      - run: pip install wheel
       - name: pip install
         run: pip install -r requirements.txt
 
