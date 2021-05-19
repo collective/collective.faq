@@ -34,4 +34,4 @@ jobs:
 
       # run black
       - name: run flake8
-        run: flake8 src/ setup.py
+        run: flake8 --ignore=E501 --show-source src/ setup.py
