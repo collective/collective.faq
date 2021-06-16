@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: collective.faq 2.0.0\n"
-"POT-Creation-Date: 2019-02-21 16:13+0000\n"
+"POT-Creation-Date: 2021-06-16 08:21+0000\n"
 "PO-Revision-Date: 2021-06-15 18:12+0200\n"
 "Last-Translator: Lele Gaifax <lele@metapensiero.it>\n"
 "Language-Team: Italian <it@li.org>\n"
@@ -11,13 +11,13 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0\n"
-"Language: it\n"
 "Language-Code: it\n"
 "Language-Name: Italian\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: collective.faq\n"
+"Language: it\n"
 
-#: collective/faq/interfaces.py:35
+#: collective/faq/interfaces.py:34
 msgid "Answer"
 msgstr "Risposta"
 
@@ -50,7 +50,7 @@ msgstr "Domanda frequente"
 msgid "Installs the FAQ add-on."
 msgstr "Installa il prodotto aggiuntivo FAQ"
 
-#: collective/faq/interfaces.py:36
+#: collective/faq/interfaces.py:35
 msgid "Meaningful sentences that explains the answer"
 msgstr "Testo con la risposta"
 
