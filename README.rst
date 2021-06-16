@@ -58,6 +58,7 @@ This product has been translated into
 
 - German
 - French
+- Italian
 
 
 Installation
