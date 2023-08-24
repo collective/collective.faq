@@ -1,38 +1,38 @@
-# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
-# SOME DESCRIPTIVE TITLE.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Italian translations for collective.faq
+# Lele Gaifas <lele@metapensiero.it>, 2020.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: collective.faq 2.0.0\n"
 "POT-Creation-Date: 2021-06-16 08:21+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2021-06-15 18:12+0200\n"
+"Last-Translator: Lele Gaifax <lele@metapensiero.it>\n"
+"Language-Team: Italian <it@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0\n"
-"Language-Code: en\n"
-"Language-Name: English\n"
+"Language-Code: it\n"
+"Language-Name: Italian\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: collective.faq\n"
+"Language: it\n"
 
 #: collective/faq/interfaces.py:34
 msgid "Answer"
-msgstr "Antwort"
+msgstr "Risposta"
 
 #: collective/faq/interfaces.py:28
 msgid "Detailed Question"
-msgstr "Detaillierte Frage"
+msgstr "Domanda dettagliata"
 
 #: collective/faq/profiles/default/types/FAQ.xml
 #: collective/faq/profiles/default/types/FAQ_Item.xml
 msgid "Edit"
-msgstr "Bearbeiten"
+msgstr "Modifica"
 
 #: collective/faq/profiles/default/types/FAQ.xml
 msgid "FAQ"
-msgstr "FAQ"
+msgstr "Domande frequenti"
 
 #: collective/faq/configure.zcml:24
 msgid "FAQ (collective.faq)"
@@ -40,37 +40,37 @@ msgstr "FAQ (collective.faq)"
 
 #: collective/faq/configure.zcml:33
 msgid "FAQ (collective.faq): uninstall"
-msgstr "FAQ (collective.faq): deinstallieren"
+msgstr "FAQ (collective.faq): disinstalla"
 
 #: collective/faq/profiles/default/types/FAQ_Item.xml
 msgid "FAQ Item"
-msgstr "FAQ-Eintrag"
+msgstr "Domanda frequente"
 
 #: collective/faq/configure.zcml:24
 msgid "Installs the FAQ add-on."
-msgstr "Installiert das FAQ Add-On."
+msgstr "Installa il prodotto aggiuntivo FAQ"
 
 #: collective/faq/interfaces.py:35
 msgid "Meaningful sentences that explains the answer"
-msgstr "Einige aussagekräftige Sätze, die die Frage beantworten"
+msgstr "Testo con la risposta"
 
 #: collective/faq/interfaces.py:29
 msgid "More details on the question, if not evident from the title"
-msgstr "Details zur Fragestellung, sofern sie nicht aus dem Titel hervorgehen"
+msgstr "Ulteriori dettagli sulla domanda, se il titolo non è sufficiente"
 
 #: collective/faq/interfaces.py:23
 msgid "Question"
-msgstr "Frage"
+msgstr "Domanda"
 
 #: collective/faq/browser/faq.pt:10
 msgid "Show/Hide all"
-msgstr "Alles anzeigen/verbergen"
+msgstr "Mostra/Nascondi tutto"
 
 #: collective/faq/configure.zcml:33
 msgid "Uninstalls the FAQ add-on."
-msgstr "Deinstalliert das FAQ-Add-On."
+msgstr "Disinstalla il prodotto aggiuntivo FAQ."
 
 #: collective/faq/profiles/default/types/FAQ.xml
 #: collective/faq/profiles/default/types/FAQ_Item.xml
 msgid "View"
-msgstr "Ansicht"
+msgstr "Visualizza"

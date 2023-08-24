@@ -5,7 +5,8 @@ Changelog
 2.0.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add Italian translation
+  [lelit]
 
 
 2.0.0 (2021-05-19)
