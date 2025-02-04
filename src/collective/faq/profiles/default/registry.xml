@@ -1,5 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <registry>
-  <record name="plone.displayed_types" interface="Products.CMFPlone.interfaces.controlpanel.INavigationSchema" field="displayed_types">
+  <record field="displayed_types"
+          interface="Products.CMFPlone.interfaces.controlpanel.INavigationSchema"
+          name="plone.displayed_types"
+  >
     <field type="plone.registry.field.Tuple">
       <default>
         <element>Image</element>
@@ -10,10 +14,16 @@
         <element>Document</element>
         <element>Event</element>
       </default>
-      <description xmlns:ns0="http://xml.zope.org/namespaces/i18n" ns0:domain="plone" ns0:translate="">The content types that should be shown in the navigation and site map.</description>
-      <missing_value/>
+      <description xmlns:ns0="http://xml.zope.org/namespaces/i18n"
+                   ns0:domain="plone"
+                   ns0:translate=""
+      >The content types that should be shown in the navigation and site map.</description>
+      <missing_value />
       <required>False</required>
-      <title xmlns:ns0="http://xml.zope.org/namespaces/i18n" ns0:domain="plone" ns0:translate="">Displayed content types</title>
+      <title xmlns:ns0="http://xml.zope.org/namespaces/i18n"
+             ns0:domain="plone"
+             ns0:translate=""
+      >Displayed content types</title>
       <value_type type="plone.registry.field.Choice">
         <vocabulary>plone.app.vocabularies.ReallyUserFriendlyTypes</vocabulary>
       </value_type>
@@ -23,8 +33,9 @@
     </value>
   </record>
 
-  <records prefix="plone.resources/collective-faq"
-           interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+  <records interface="Products.CMFPlone.interfaces.IResourceRegistry"
+           prefix="plone.resources/collective-faq"
+  >
     <value key="js">++resource++collective.faq/faq.js</value>
     <value key="deps">jquery</value>
     <value key="css">
@@ -32,9 +43,12 @@
     </value>
   </records>
 
-  <records prefix="plone.bundles/collective-faq"
-           interface='Products.CMFPlone.interfaces.IBundleRegistry'>
-    <value key="resources" purge="false">
+  <records interface="Products.CMFPlone.interfaces.IBundleRegistry"
+           prefix="plone.bundles/collective-faq"
+  >
+    <value key="resources"
+           purge="false"
+    >
       <element>collective-faq</element>
     </value>
     <value key="enabled">True</value>
