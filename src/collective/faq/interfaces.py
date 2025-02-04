@@ -1,4 +1,5 @@
 """Module where all interfaces, events and exceptions live."""
+
 from collective.faq import _
 from plone.app.textfield import RichText
 from plone.supermodel import model

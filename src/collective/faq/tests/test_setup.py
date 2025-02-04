@@ -1,6 +1,8 @@
 """Setup tests for this package."""
+
 from collective.faq.testing import COLLECTIVEFAQ_CORE_INTEGRATION_TESTING  # noqa
 from plone import api
+
 
 try:
     from Products.CMFPlone.utils import get_installer

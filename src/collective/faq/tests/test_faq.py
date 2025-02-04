@@ -1,12 +1,11 @@
-from plone.app.testing import TEST_USER_ID
-from zope.component import queryUtility
-from zope.component import createObject
+from collective.faq.interfaces import IFAQ
+from collective.faq.testing import COLLECTIVEFAQ_CORE_INTEGRATION_TESTING  # noqa
 from plone.app.testing import setRoles
+from plone.app.testing import TEST_USER_ID
 from plone.dexterity.interfaces import IDexterityFTI
 from Products.CMFPlone.utils import get_installer
-
-from collective.faq.testing import COLLECTIVEFAQ_CORE_INTEGRATION_TESTING  # noqa
-from collective.faq.interfaces import IFAQ
+from zope.component import createObject
+from zope.component import queryUtility
 
 import unittest
 
