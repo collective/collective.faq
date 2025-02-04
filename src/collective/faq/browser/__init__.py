@@ -5,7 +5,7 @@ from plone.dexterity.browser.view import DefaultView
 
 
 class FAQView(DefaultView):
-    """Defaul view for FAQ content type."""
+    """Default view for FAQ content type."""
 
     def questions(self, faq=None):
         provides = [IFAQItem]
@@ -24,4 +24,4 @@ class FAQView(DefaultView):
 
 
 class FAQItemView(DefaultView):
-    """Defaul view for FAQ Item content type."""
+    """Default view for FAQ Item content type."""
