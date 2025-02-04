@@ -52,7 +52,6 @@ setup(
         "plone.supermodel",
         "Products.GenericSetup>=1.8.2",
         "setuptools",
-        "z3c.jbot",
         "zope.i18nmessageid",
         "zope.interface",
         "zope.publisher",
