@@ -28,6 +28,9 @@ jobs:
     uses: plone/meta/.github/workflows/qa.yml@main
   test:
     uses: plone/meta/.github/workflows/test.yml@main
+    with:
+
+       py-versions: '["3.13"]'
   coverage:
     uses: plone/meta/.github/workflows/coverage.yml@main
   dependencies:
@@ -64,6 +67,58 @@ jobs:
 # py_versions = "['3.12', '3.11']"
 ##
 
+# The Meta workflow currently uses tox to test Plone 6.1 on Python 3.13.
+# So let's test Plone 6.0 with buildout on Python 3.9.
+name: Test Plone 6.0 with Buildout
+on:
+  push:
+    branches:
+      - master
+      - main
+  pull_request:
+    branches:
+      - master
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [3.9]
+        plone-version: [6.0]
+
+    steps:
+      # git checkout
+      - uses: actions/checkout@v4
+
+      # python setup
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      # python cache
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      # python install
+      - name: pip install
+        run: pip install -r requirements.txt
+
+      # buildout
+      - name: buildout
+        run: buildout -t 10 -c plone-${{ matrix.plone-version }}.x.cfg
+
+      # test
+      - name: test
+        run: bin/test
 
 ##
 # Specify additional jobs in .meta.toml:
