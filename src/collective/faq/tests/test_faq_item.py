@@ -1,6 +1,5 @@
 from collective.faq.interfaces import IFAQItem
 from collective.faq.testing import COLLECTIVEFAQ_CORE_INTEGRATION_TESTING
-from plone import api
 from plone.app.testing import setRoles
 from plone.app.testing import TEST_USER_ID
 from plone.dexterity.interfaces import IDexterityFTI
@@ -18,7 +17,6 @@ class FAQItemIntegrationTest(unittest.TestCase):
         """Custom shared utility setup for tests."""
         self.portal = self.layer["portal"]
         setRoles(self.portal, TEST_USER_ID, ["Manager"])
-        self.installer = api.portal.get_tool("portal_quickinstaller")
         fti = queryUtility(IDexterityFTI, name="FAQ Item")
         fti.global_allow = True
 
