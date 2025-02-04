@@ -1,5 +1,5 @@
 from collective.faq.interfaces import IFAQItem
-from collective.faq.testing import COLLECTIVEFAQ_CORE_INTEGRATION_TESTING  # noqa
+from collective.faq.testing import COLLECTIVEFAQ_CORE_INTEGRATION_TESTING
 from plone import api
 from plone.app.testing import setRoles
 from plone.app.testing import TEST_USER_ID

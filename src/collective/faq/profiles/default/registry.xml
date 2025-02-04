@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <registry>
   <record field="displayed_types"
-          interface="Products.CMFPlone.interfaces.controlpanel.INavigationSchema"
+          interface="plone.base.interfaces.controlpanel.INavigationSchema"
           name="plone.displayed_types"
   >
     <field type="plone.registry.field.Tuple">
@@ -33,7 +33,7 @@
     </value>
   </record>
 
-  <records interface="Products.CMFPlone.interfaces.IResourceRegistry"
+  <records interface="plone.base.interfaces.IResourceRegistry"
            prefix="plone.resources/collective-faq"
   >
     <value key="js">++resource++collective.faq/faq.js</value>
@@ -43,7 +43,7 @@
     </value>
   </records>
 
-  <records interface="Products.CMFPlone.interfaces.IBundleRegistry"
+  <records interface="plone.base.interfaces.IBundleRegistry"
            prefix="plone.bundles/collective-faq"
   >
     <value key="resources"

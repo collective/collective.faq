@@ -1,9 +1,9 @@
 from collective.faq.interfaces import IFAQ
-from collective.faq.testing import COLLECTIVEFAQ_CORE_INTEGRATION_TESTING  # noqa
+from collective.faq.testing import COLLECTIVEFAQ_CORE_INTEGRATION_TESTING
 from plone.app.testing import setRoles
 from plone.app.testing import TEST_USER_ID
+from plone.base.utils import get_installer
 from plone.dexterity.interfaces import IDexterityFTI
-from Products.CMFPlone.utils import get_installer
 from zope.component import createObject
 from zope.component import queryUtility
 
