@@ -110,10 +110,6 @@ Run Unit / Integration Tests::
 
   make test
 
-Run Robot Framework based acceptance tests::
-
-  make test-acceptance
-
 
 Credits
 -------
