@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 from plone.app.testing import TEST_USER_ID
 from zope.component import queryUtility
 from zope.component import createObject

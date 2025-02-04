@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 from .interfaces import IFAQ
 from .interfaces import IFAQItem
 from plone.dexterity.content import Container

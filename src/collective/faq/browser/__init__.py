@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 from collective.faq.interfaces import IFAQ
 from collective.faq.interfaces import IFAQItem
 from plone import api
