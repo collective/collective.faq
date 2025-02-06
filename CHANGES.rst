@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-2.0.1 (unreleased)
+2.0.1 (2025-02-06)
 ------------------
 
 - Add Italian translation
