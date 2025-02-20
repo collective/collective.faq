@@ -40,7 +40,6 @@
     <element value="plone.dublincore" />
     <element value="plone.namefromtitle" />
     <element value="plone.excludefromnavigation" />
-    <element value="plone.allowdiscussion" />
     <element value="plone.shortname" />
     <element value="plone.relateditems" />
     <element value="plone.versioning" />
