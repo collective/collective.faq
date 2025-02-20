@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<registry xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+          i18n:domain="collective.faq"
+>
+
+  <record name="plone.icon.contenttype/faq">
+    <field type="plone.registry.field.TextLine">
+      <title i18n:translate="">FAQ</title>
+    </field>
+    <value key="resource">++plone++bootstrap-icons/folder.svg</value>
+  </record>
+
+  <record name="plone.icon.contenttype/faq-item">
+    <field type="plone.registry.field.TextLine">
+      <title i18n:translate="">FAQ Item</title>
+    </field>
+    <value key="resource">++plone++bootstrap-icons/question-circle.svg</value>
+  </record>
+
+</registry>
