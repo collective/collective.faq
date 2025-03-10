@@ -5,7 +5,12 @@ Changelog
 3.0.0 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Support Plone 6.0, 6.1, 6.2.
+  Require at least Python 3.9, test until Python 3.13.
+  [maurits]
+
+- Drop support for Plone 5.2.
+  [maurits]
 
 
 2.0.1 (2025-02-06)
