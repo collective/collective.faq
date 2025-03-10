@@ -5,12 +5,19 @@
     i18n_domain="collective.faq"
     >
 
-  <!-- <genericsetup:upgradeStep
-    source="2000"
-    destination="2001"
-    profile="collective.faq:default"
-    title="Does some upgrade task"
-    handler=".upgrades.do_upgrade"
-    /> -->
+  <genericsetup:registerProfile
+      name="upgrade_plone60"
+      title="FAQ (collective.faq): upgrade_plone60"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      directory="profiles/upgrade_plone60"
+      />
+
+  <genericsetup:upgradeDepends
+      title="Upgrade to Plone 6.0"
+      profile="collective.faq:default"
+      source="2999"
+      destination="3000"
+      import_profile="collective.faq:upgrade_plone60"
+      />
 
 </configure>
