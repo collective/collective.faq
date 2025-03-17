@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """Installer for the collective.faq package."""
 
 from setuptools import find_packages
@@ -16,18 +15,23 @@ long_description = "\n\n".join(
 
 setup(
     name="collective.faq",
-    version="2.0.2.dev0",
+    version="3.0.0.dev0",
     description="Plone addon package for managing FAQ sections",
     long_description=long_description,
-    # Get more from https://pypi.python.org/pypi?%3Aaction=list_classifiers
+    # Get more from https://pypi.org/classifiers/
     classifiers=[
-        "Development Status :: 3 - Alpha",
+        "Development Status :: 5 - Production/Stable",
         "Environment :: Web Environment",
         "Framework :: Plone",
-        "Framework :: Plone :: 5.2",
+        "Framework :: Plone :: 6.0",
+        "Framework :: Plone :: 6.1",
+        "Framework :: Plone :: 6.2",
         "Programming Language :: Python",
-        "Programming Language :: Python :: 3.7",
-        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
+        "Programming Language :: Python :: 3.13",
         "Operating System :: OS Independent",
         "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
     ],
@@ -43,32 +47,28 @@ setup(
     zip_safe=False,
     install_requires=[
         "plone.api",
-        "plone.app.content",
-        "plone.app.contenttypes",
-        "plone.app.dexterity",
-        "plone.app.lockingbehavior",
-        "plone.app.relationfield",
-        "plone.app.versioningbehavior",
+        "plone.app.textfield",
+        "plone.base",
+        "plone.dexterity",
+        "plone.supermodel",
         "Products.GenericSetup>=1.8.2",
         "setuptools",
-        "z3c.jbot",
-        # 'plone.restapi',
-        # 'Products.PloneFormGen',
-        # 'plone.formwidget.captcha',
+        "zope.i18nmessageid",
+        "zope.interface",
+        "zope.publisher",
+        "zope.schema",
     ],
+    python_requires=">=3.9",
     extras_require={
         "test": [
             "plone.app.testing",
-            # Plone KGS does not use this version, because it would break
-            # Remove if your package shall be part of coredev.
-            # plone_coredev tests as of 2016-04-01.
-            "plone.testing>=5.0.0",
-            "plone.app.contenttypes",
-            "plone.app.robotframework[debug]",
+            "plone.app.contenttypes[test]",
+            "plone.browserlayer",
+            "zope.component",
         ],
     },
     entry_points="""
-    [z3c.autoinclude.plugin]
+    [plone.autoinclude.plugin]
     target = plone
     """,
 )

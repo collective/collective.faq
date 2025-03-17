@@ -1,5 +1,5 @@
-# -*- coding: utf-8 -*-
 """Module where all interfaces, events and exceptions live."""
+
 from collective.faq import _
 from plone.app.textfield import RichText
 from plone.supermodel import model
@@ -20,18 +20,18 @@ class IFAQItem(Interface):
     """FAQ Item content type interface."""
 
     title = schema.TextLine(
-        title=_(u"Question"),
+        title=_("Question"),
         required=True,
     )
 
     detailed_question = schema.Text(
-        title=_(u"Detailed Question"),
-        description=_(u"More details on the question, if not evident from the title"),
+        title=_("Detailed Question"),
+        description=_("More details on the question, if not evident from the title"),
         required=False,
     )
 
     answer = RichText(
-        title=_(u"Answer"),
-        description=_(u"Meaningful sentences that explains the answer"),
+        title=_("Answer"),
+        description=_("Meaningful sentences that explains the answer"),
         required=False,
     )

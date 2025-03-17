@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<registry>
+
+  <records interface="plone.base.interfaces.IBundleRegistry"
+           prefix="plone.bundles/collective-faq"
+  >
+    <value key="resources"
+           purge="false"
+    >
+      <element>collective-faq</element>
+    </value>
+    <value key="enabled">True</value>
+    <value key="csscompilation">++resource++collective.faq/faq.css</value>
+    <value key="jscompilation">++resource++collective.faq/faq.js</value>
+    <value key="depends">plone</value>
+  </records>
+
+</registry>

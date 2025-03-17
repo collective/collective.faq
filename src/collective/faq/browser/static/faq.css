@@ -1,16 +1,3 @@
-.plonetoolbar-contenttype .contenttype-faq::before,
-.plonetoolbar-contenttype .contenttype-faq-item::before {
-    content: '';
-    width: 14px;
-    height: 14px;
-    opacity: .85;
-}
-.plonetoolbar-contenttype .contenttype-faq::before {
-    background-image: url('++resource++collective.faq/faq.svg');
-}
-.plonetoolbar-contenttype .contenttype-faq-item::before {
-    background-image: url('++resource++collective.faq/faq-item.svg');
-}
 .faq {
     padding: 0;
 }
