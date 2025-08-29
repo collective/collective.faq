@@ -1,0 +1,76 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-06-16 08:21+0000\n"
+"PO-Revision-Date: 2025-08-29 12:00+0000\n"
+"Last-Translator: Jean-Paul Ladage <j.ladage@zestsoftware.nl>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: nl\n"
+"Language-Name: Dutch\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.faq\n"
+
+#: collective/faq/interfaces.py:34
+msgid "Answer"
+msgstr "Antwoord"
+
+#: collective/faq/interfaces.py:28
+msgid "Detailed Question"
+msgstr "Gedetailleerde Vraag"
+
+#: collective/faq/profiles/default/types/FAQ.xml
+#: collective/faq/profiles/default/types/FAQ_Item.xml
+msgid "Edit"
+msgstr "Bewerken"
+
+#: collective/faq/profiles/default/types/FAQ.xml
+msgid "FAQ"
+msgstr ""
+
+#: collective/faq/configure.zcml:24
+msgid "FAQ (collective.faq)"
+msgstr "FAQ (collective.faq)"
+
+#: collective/faq/configure.zcml:33
+msgid "FAQ (collective.faq): uninstall"
+msgstr "FAQ (collective.faq): de-installeren"
+
+#: collective/faq/profiles/default/types/FAQ_Item.xml
+msgid "FAQ Item"
+msgstr "Vraagitem"
+
+#: collective/faq/configure.zcml:24
+msgid "Installs the FAQ add-on."
+msgstr "Installeert de FAQ-add-on."
+
+#: collective/faq/interfaces.py:35
+msgid "Meaningful sentences that explains the answer"
+msgstr "Betekenisvolle zinnen die het antwoord uitleggen"
+
+#: collective/faq/interfaces.py:29
+msgid "More details on the question, if not evident from the title"
+msgstr "Meer details over de vraag, als dit niet duidelijk is uit de titel"
+
+#: collective/faq/interfaces.py:23
+msgid "Question"
+msgstr "Vraag"
+
+#: collective/faq/browser/faq.pt:10
+msgid "Show/Hide all"
+msgstr "Toon/Verberg alles"
+
+#: collective/faq/configure.zcml:33
+msgid "Uninstalls the FAQ add-on."
+msgstr "De-installeert de FAQ-add-on."
+
+#: collective/faq/profiles/default/types/FAQ.xml
+#: collective/faq/profiles/default/types/FAQ_Item.xml
+msgid "View"
+msgstr "Bekijken"
