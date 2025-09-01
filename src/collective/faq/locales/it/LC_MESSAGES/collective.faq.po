@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: collective.faq 2.0.0\n"
-"POT-Creation-Date: 2021-06-16 08:21+0000\n"
+"POT-Creation-Date: 2025-09-01 09:41+0000\n"
 "PO-Revision-Date: 2021-06-15 18:12+0200\n"
 "Last-Translator: Lele Gaifax <lele@metapensiero.it>\n"
 "Language-Team: Italian <it@li.org>\n"
@@ -17,60 +17,64 @@ msgstr ""
 "Domain: collective.faq\n"
 "Language: it\n"
 
-#: collective/faq/interfaces.py:34
+#: ../interfaces.py:34
 msgid "Answer"
 msgstr "Risposta"
 
-#: collective/faq/interfaces.py:28
+#: ../interfaces.py:28
 msgid "Detailed Question"
 msgstr "Domanda dettagliata"
 
-#: collective/faq/profiles/default/types/FAQ.xml
-#: collective/faq/profiles/default/types/FAQ_Item.xml
+#: ../profiles/default/types/FAQ.xml
+#: ../profiles/default/types/FAQ_Item.xml
 msgid "Edit"
 msgstr "Modifica"
 
-#: collective/faq/profiles/default/types/FAQ.xml
+#: ../profiles/default/registry/icons.xml
+#: ../profiles/default/types/FAQ.xml
+#: ../profiles/upgrade_plone60/registry/icons.xml
 msgid "FAQ"
 msgstr "Domande frequenti"
 
-#: collective/faq/configure.zcml:24
+#: ../configure.zcml:23
 msgid "FAQ (collective.faq)"
 msgstr "FAQ (collective.faq)"
 
-#: collective/faq/configure.zcml:33
+#: ../configure.zcml:32
 msgid "FAQ (collective.faq): uninstall"
 msgstr "FAQ (collective.faq): disinstalla"
 
-#: collective/faq/profiles/default/types/FAQ_Item.xml
+#: ../profiles/default/registry/icons.xml
+#: ../profiles/default/types/FAQ_Item.xml
+#: ../profiles/upgrade_plone60/registry/icons.xml
 msgid "FAQ Item"
 msgstr "Domanda frequente"
 
-#: collective/faq/configure.zcml:24
+#: ../configure.zcml:23
 msgid "Installs the FAQ add-on."
 msgstr "Installa il prodotto aggiuntivo FAQ"
 
-#: collective/faq/interfaces.py:35
+#: ../interfaces.py:35
 msgid "Meaningful sentences that explains the answer"
 msgstr "Testo con la risposta"
 
-#: collective/faq/interfaces.py:29
+#: ../interfaces.py:29
 msgid "More details on the question, if not evident from the title"
 msgstr "Ulteriori dettagli sulla domanda, se il titolo non è sufficiente"
 
-#: collective/faq/interfaces.py:23
+#: ../interfaces.py:23
 msgid "Question"
 msgstr "Domanda"
 
-#: collective/faq/browser/faq.pt:10
+#: ../browser/faq.pt:12
 msgid "Show/Hide all"
 msgstr "Mostra/Nascondi tutto"
 
-#: collective/faq/configure.zcml:33
+#: ../configure.zcml:32
 msgid "Uninstalls the FAQ add-on."
 msgstr "Disinstalla il prodotto aggiuntivo FAQ."
 
-#: collective/faq/profiles/default/types/FAQ.xml
-#: collective/faq/profiles/default/types/FAQ_Item.xml
+#: ../profiles/default/types/FAQ.xml
+#: ../profiles/default/types/FAQ_Item.xml
 msgid "View"
 msgstr "Visualizza"
