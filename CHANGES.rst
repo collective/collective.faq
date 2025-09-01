@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-3.0.1 (unreleased)
+3.0.1 (2025-09-01)
 ------------------
 
 - Added Dutch translations.
