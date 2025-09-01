@@ -5,7 +5,8 @@ Changelog
 3.0.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Added Dutch translations.
+  [jladage]
 
 
 3.0.0 (2025-03-17)
