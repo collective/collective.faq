@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: collective.faq 2.0.0\n"
-"POT-Creation-Date: 2025-09-01 09:41+0000\n"
+"POT-Creation-Date: 2025-09-01 09:47+0000\n"
 "PO-Revision-Date: 2021-06-15 18:12+0200\n"
 "Last-Translator: Lele Gaifax <lele@metapensiero.it>\n"
 "Language-Team: Italian <it@li.org>\n"
