@@ -4,7 +4,7 @@
     i18n_domain="collective.faq"
     >
 
-    <browser:page
+  <browser:page
       name="view"
       for="..interfaces.IFAQ"
       class=".FAQView"
