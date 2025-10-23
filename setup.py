@@ -65,6 +65,7 @@ setup(
             "plone.app.contenttypes[test]",
             "plone.browserlayer",
             "zope.component",
+            "zope.deprecation",
         ],
     },
     entry_points="""
