@@ -5,6 +5,9 @@ Changelog
 3.0.2 (unreleased)
 ------------------
 
+- Properly enable versioning of FAQ and FAQ Item.
+  [maurits]
+
 - Add icon expressions to our edit/view actions to make them visible.
   [maurits]
 
