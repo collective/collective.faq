@@ -11,12 +11,27 @@
       directory="profiles/upgrade_plone60"
       />
 
+  <genericsetup:registerProfile
+      name="upgrade_3001"
+      title="FAQ (collective.faq): upgrade_3001"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      directory="profiles/upgrade_3001"
+      />
+
   <genericsetup:upgradeDepends
       title="Upgrade to Plone 6.0"
       profile="collective.faq:default"
       source="2999"
       destination="3000"
       import_profile="collective.faq:upgrade_plone60"
+      />
+
+  <genericsetup:upgradeDepends
+      title="Upgrade to version 3001"
+      profile="collective.faq:default"
+      source="3000"
+      destination="3001"
+      import_profile="collective.faq:upgrade_3001"
       />
 
 </configure>
