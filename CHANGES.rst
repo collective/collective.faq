@@ -5,7 +5,8 @@ Changelog
 3.0.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add icon expressions to our edit/view actions to make them visible.
+  [maurits]
 
 
 3.0.1 (2025-09-01)
