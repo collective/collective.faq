@@ -9,6 +9,8 @@ class HiddenProfiles:
         """Hide uninstall profile from site-creation and quickinstaller"""
         return [
             "collective.faq:uninstall",
+            "collective.faq:upgrade_plone60",
+            "collective.faq:upgrade_3001",
         ]
 
 

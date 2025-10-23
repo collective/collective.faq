@@ -1,15 +1,8 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser"
-    xmlns:plone="http://namespaces.plone.org/plone"
     i18n_domain="collective.faq"
     >
-
-  <!-- Publish static files -->
-  <browser:resourceDirectory
-      name="collective.faq"
-      directory="static"
-      />
 
   <browser:page
       name="view"
