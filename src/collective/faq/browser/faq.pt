@@ -9,6 +9,48 @@
 >
   <body>
     <metal:content-core fill-slot="content-core">
+      <div>
+        <a class="btn btn-primary"
+           aria-controls=".faq-item-answer"
+           aria-expanded="false"
+           data-bs-target=".faq-item-answer"
+           data-bs-toggle="collapse"
+           i18n:translate=""
+        >
+          Show/Hide all
+        </a>
+      </div>
+      <div class="accordion">
+        <div class="accordion-item"
+             tal:repeat="item view/questions"
+        >
+          <tal:item define="
+                      obj item/getObject;
+                    ">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed"
+                      aria-controls="faq-item-${item/UID}"
+                      aria-expanded="false"
+                      type="button"
+                      data-bs-target="#faq-item-${item/UID}"
+                      data-bs-toggle="collapse"
+              >
+                ${obj/title}
+              </button>
+              <p class="discreet ms-4"
+                 tal:condition="obj/detailed_question|nothing"
+              >${obj/detailed_question}</p>
+            </h2>
+            <div class="faq-item-answer accordion-collapse collapse"
+                 id="faq-item-${item/UID}"
+            >
+              <div class="accordion-body">
+                ${structure: obj/answer/output | nothing}
+              </div>
+            </div>
+          </tal:item>
+        </div>
+      </div>
       <button class="faq-toggle-answers"
               i18n:translate=""
       >
