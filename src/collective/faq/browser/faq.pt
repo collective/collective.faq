@@ -10,7 +10,7 @@
   <body>
     <metal:content-core fill-slot="content-core">
       <div>
-        <a class="btn btn-primary"
+        <a class="btn btn-primary mb-3"
            aria-controls=".faq-item-answer"
            aria-expanded="false"
            data-bs-target=".faq-item-answer"
