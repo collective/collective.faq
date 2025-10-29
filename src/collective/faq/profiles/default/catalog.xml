@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object meta_type="Plone Catalog Tool"
+        name="portal_catalog"
+>
+  <!-- The index is already added in Products.CMFPlone. -->
+  <!-- <index meta_type="KeywordIndex"
+         name="getRawRelatedItems"
+  >
+    <indexed_attr value="getRawRelatedItems" />
+  </index> -->
+  <!-- We want a metadata column as well though. -->
+  <column value="getRawRelatedItems" />
+</object>

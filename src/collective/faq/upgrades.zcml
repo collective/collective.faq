@@ -26,12 +26,19 @@
       import_profile="collective.faq:upgrade_plone60"
       />
 
-  <genericsetup:upgradeDepends
-      title="Upgrade to version 3001"
+  <genericsetup:upgradeSteps
       profile="collective.faq:default"
       source="3000"
       destination="3001"
-      import_profile="collective.faq:upgrade_3001"
-      />
+      >
+    <genericsetup:upgradeDepends
+        title="Upgrade to version 3001"
+        import_profile="collective.faq:upgrade_3001"
+        />
+    <genericsetup:upgradeStep
+        title="Reindex and catalog getRawRelatedItems"
+        handler=".upgrades.update_related_items"
+        />
+  </genericsetup:upgradeSteps>
 
 </configure>

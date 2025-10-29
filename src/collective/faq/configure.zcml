@@ -11,6 +11,13 @@
 
   <include file="upgrades.zcml" />
 
+  <!-- This may need to be moved to Products.CMFPlone or similar.
+       See https://github.com/plone/Products.CMFPlone/issues/4236 -->
+  <adapter
+      factory=".indexer.getRawRelatedItems"
+      name="getRawRelatedItems"
+      />
+
   <genericsetup:registerProfile
       name="default"
       title="FAQ (collective.faq)"
