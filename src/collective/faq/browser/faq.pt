@@ -7,6 +7,11 @@
       xml:lang="en"
       i18n:domain="collective.faq"
 >
+  <head>
+    <metal:jsonld fill-slot="javascript_head_slot">
+      <script type="application/ld+json">${structure: view/jsonld}</script>
+    </metal:jsonld>
+  </head>
   <body>
     <metal:content-core fill-slot="content-core">
       <div>

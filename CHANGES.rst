@@ -5,6 +5,10 @@ Changelog
 3.1.0 (unreleased)
 ------------------
 
+- Show JSON-LD representation of the FAQ in the head section.
+  See https://developers.google.com/search/docs/appearance/structured-data/faqpage
+  [maurits]
+
 - Show related items of FAQ Items in FAQ view.
   [maurits]
 
