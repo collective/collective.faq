@@ -1,3 +1,4 @@
+from AccessControl.SecurityManagement import getSecurityManager
 from collective.faq.interfaces import IFAQ
 from collective.faq.interfaces import IFAQItem
 from plone import api
@@ -17,12 +18,30 @@ class FAQView(DefaultView):
         )
 
     def _questions(self, faq):
-        return api.content.find(
+        questions = api.content.find(
             context=faq,
             depth=1,
             object_provides=[IFAQItem],
             sort_on="getObjPositionInParent",
         )
+        results = []
+        if not questions:
+            return results
+        checkPermission = getSecurityManager().checkPermission
+        for brain in questions:
+            # We have brains, but we need the real objects for the answer,
+            # detailed question, and related items.
+            obj = brain.getObject()
+            related = []
+            results.append({"question": obj, "related": related})
+            for relation in obj.relatedItems:
+                if relation.isBroken():
+                    continue
+                target_obj = relation.to_object
+                if not checkPermission("View", target_obj):
+                    continue
+                related.append(target_obj)
+        return results
 
     def faqs(self):
         """Return all our FAQ items plus nested FAQs and their items.

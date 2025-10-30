@@ -46,27 +46,42 @@
                tal:repeat="item container/questions"
           >
             <tal:item define="
-                        obj item/getObject;
+                        question python:item['question'];
+                        related python:item['related'];
                       ">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed"
-                        aria-controls="faq-item-${item/UID}"
+                        aria-controls="faq-item-${question/UID}"
                         aria-expanded="false"
                         type="button"
-                        data-bs-target="#faq-item-${item/UID}"
+                        data-bs-target="#faq-item-${question/UID}"
                         data-bs-toggle="collapse"
                 >
-                  ${obj/title}
+                  ${question/title}
                 </button>
                 <p class="discreet ms-4"
-                   tal:condition="python: getattr(obj, 'detailed_question', None)"
-                >${obj/detailed_question}</p>
+                   tal:condition="python: getattr(question, 'detailed_question', None)"
+                >${question/detailed_question}</p>
               </h2>
               <div class="faq-item-answer accordion-collapse collapse"
-                   id="faq-item-${item/UID}"
+                   id="faq-item-${question/UID}"
               >
                 <div class="accordion-body">
-                  ${structure: obj/answer/output | nothing}
+                  ${structure: question/answer/output | nothing}
+                  <div class="related"
+                       tal:condition="related"
+                  >
+                    <strong class="more-information"
+                            i18n:translate=""
+                    >More information</strong>
+                    <ul class="more-information-list">
+                      <li class="more-information-item"
+                          tal:repeat="rel related"
+                      >
+                        <a href="${rel/absolute_url}">${rel/Title}</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </tal:item>
