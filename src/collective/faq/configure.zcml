@@ -34,4 +34,14 @@
       name="collective.faq-hiddenprofiles"
       />
 
+  <!-- Adapters for patterns settings -->
+  <adapter
+      factory=".adapters.RestrictedTinyMCEPatternSettingsAdapter"
+      provides="plone.base.interfaces.IPatternsSettings"
+      for="*
+           *
+           plone.app.textfield.interfaces.IRichText"
+      name="pattern_settings"
+      />
+
 </configure>
