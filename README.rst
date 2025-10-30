@@ -46,9 +46,18 @@ Features
 Compatibility
 -------------
 
-The versions 2.0.0 and above (releases from the master branch) are used for Plone 5.2 / Python 3.
+* The versions 3.0.0 and above support Plone 6.0, 6.1, 6.2.
+* The versions 2.x.x are used for Plone 5.2 / Python 3.
+* For Plone 4 and Plone 5.0/5.1 support, please use versions 1.x.x.
 
-For Plone 4 and Plone 5.0/5.1 support, please use versions 1.x.x.
+
+Configuration options
+---------------------
+
+Since version 3.1.0, we show JSON-LD structured data in the head section of an FAQ.
+Google may show this data in search results for some websites.
+Google restricts the html tags that it shows, so it may help to show less options in the TinyMCE editor.
+When you set environment variable `COLLECTIVE_FAQ_RESTRICT_TINYMCE=1` (or similar true value), we show a stripped down editor.
 
 
 Translations

@@ -2,6 +2,7 @@
     xmlns="http://namespaces.zope.org/zope"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
     i18n_domain="collective.faq"
     >
 
@@ -32,6 +33,17 @@
   <utility
       factory=".setuphandlers.HiddenProfiles"
       name="collective.faq-hiddenprofiles"
+      />
+
+  <!-- Adapters for patterns settings -->
+  <adapter
+      factory=".adapters.RestrictedTinyMCEPatternSettingsAdapter"
+      provides="plone.base.interfaces.IPatternsSettings"
+      for="*
+           *
+           plone.app.textfield.interfaces.IRichText"
+      name="pattern_settings"
+      zcml:condition="envvar COLLECTIVE_FAQ_RESTRICT_TINYMCE"
       />
 
 </configure>
