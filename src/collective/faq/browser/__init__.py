@@ -4,6 +4,8 @@ from plone import api
 from plone.dexterity.browser.view import DefaultView
 from zope.deprecation import deprecate
 
+import json
+
 
 class FAQView(DefaultView):
     """Default view for FAQ content type."""
@@ -48,6 +50,36 @@ class FAQView(DefaultView):
                 }
             )
         return faqs
+
+    def jsonld(self):
+        """Return JSON-LD representation of the FAQ.
+
+        We only include our own questions, not nested FAQs.
+        They will have their own JSON-LD representation on their pages.
+        Each question and answer should be in a JSON-LD only once
+        per site.
+        """
+        faq_items = []
+        for question_brain in self._questions(self.context):
+            question = question_brain.getObject()
+            faq_items.append(
+                {
+                    "@type": "Question",
+                    "name": question.title,
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": question.answer.output,
+                    },
+                }
+            )
+        faq_jsonld = {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faq_items,
+        }
+        # We don't really need indentation, it can just be on one line.
+        # But for readability during debugging, this is much friendlier.
+        return json.dumps(faq_jsonld, indent=2)
 
     @deprecate("This method is only used by an old template. Did you customize it?")
     def questions(self, faq=None):
