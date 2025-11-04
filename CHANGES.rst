@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-3.1.0 (unreleased)
+3.1.0 (2025-11-04)
 ------------------
 
 - Show JSON-LD representation of the FAQ in the head section.
