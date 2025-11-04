@@ -4,3 +4,7 @@
 [meta]
 template = "default"
 commit-id = "2.1.1.dev0"
+
+[pyproject]
+# We need zope.configuration>=6.0 to support the 'envvar' zcml condition.
+dependencies_ignores = "['zope.configuration']"
