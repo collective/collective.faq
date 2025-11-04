@@ -5,7 +5,8 @@ Changelog
 3.1.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix AttributeError: 'dict' object has no attribute 'getObject'.
+  [maurits]
 
 
 3.1.0 (2025-11-04)
