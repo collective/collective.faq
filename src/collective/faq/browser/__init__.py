@@ -79,8 +79,8 @@ class FAQView(DefaultView):
         per site.
         """
         faq_items = []
-        for question_brain in self._questions(self.context):
-            question = question_brain.getObject()
+        for result in self._questions(self.context):
+            question = result["question"]
             faq_items.append(
                 {
                     "@type": "Question",
