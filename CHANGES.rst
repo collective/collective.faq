@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-3.1.1 (unreleased)
+3.1.1 (2025-11-04)
 ------------------
 
 - Fix AttributeError: 'dict' object has no attribute 'getObject'.
