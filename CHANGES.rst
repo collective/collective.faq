@@ -2,8 +2,14 @@ Changelog
 =========
 
 
-3.0.2 (unreleased)
+3.1.0 (unreleased)
 ------------------
+
+- Show related items of FAQ Items in FAQ view.
+  [maurits]
+
+- Modernize FAQ view to use Bootstrap accordions.
+  [maurits]
 
 - Properly enable versioning of FAQ and FAQ Item.
   [maurits]
