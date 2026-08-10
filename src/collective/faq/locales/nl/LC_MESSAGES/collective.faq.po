@@ -33,7 +33,7 @@ msgstr "Bewerken"
 #: ../profiles/default/types/FAQ.xml
 #: ../profiles/upgrade_plone60/registry/icons.xml
 msgid "FAQ"
-msgstr ""
+msgstr "FAQ"
 
 #: ../configure.zcml:22
 msgid "FAQ (collective.faq)"
@@ -63,7 +63,7 @@ msgstr "Meer details over de vraag, als dit niet duidelijk is uit de titel"
 
 #: ../browser/faq.pt:81
 msgid "More information"
-msgstr ""
+msgstr "Meer informatie"
 
 #: ../interfaces.py:23
 msgid "Question"
