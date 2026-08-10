@@ -1,6 +1,5 @@
 """Installer for the collective.faq package."""
 
-from setuptools import find_packages
 from setuptools import setup
 
 long_description = "\n\n".join(
@@ -40,9 +39,6 @@ setup(
     author_email="info@kitconcept.com",
     url="https://github.com/collective/collective.faq",
     license="GPL version 2",
-    packages=find_packages("src", exclude=["ez_setup"]),
-    namespace_packages=["collective"],
-    package_dir={"": "src"},
     include_package_data=True,
     zip_safe=False,
     install_requires=[
@@ -54,7 +50,6 @@ setup(
         "plone.supermodel",
         "Products.CMFPlone",
         "Products.GenericSetup>=1.8.2",
-        "setuptools",
         "zope.configuration>=6.0",
         "zope.deprecation",
         "zope.i18nmessageid",
