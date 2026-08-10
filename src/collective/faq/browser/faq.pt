@@ -54,20 +54,22 @@
                         question python:item['question'];
                         related python:item['related'];
                       ">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed"
-                        aria-controls="faq-item-${question/UID}"
-                        aria-expanded="false"
-                        type="button"
-                        data-bs-target="#faq-item-${question/UID}"
-                        data-bs-toggle="collapse"
-                >
-                  ${question/title}
-                </button>
+              <div class="accordion-header">
+                <h2>
+                  <button class="accordion-button collapsed"
+                          aria-controls="faq-item-${question/UID}"
+                          aria-expanded="false"
+                          type="button"
+                          data-bs-target="#faq-item-${question/UID}"
+                          data-bs-toggle="collapse"
+                  >
+                    ${question/title}
+                  </button>
+                </h2>
                 <p class="discreet ms-4"
                    tal:condition="python: getattr(question, 'detailed_question', None)"
                 >${question/detailed_question}</p>
-              </h2>
+              </div>
               <div class="faq-item-answer accordion-collapse collapse"
                    id="faq-item-${question/UID}"
               >
