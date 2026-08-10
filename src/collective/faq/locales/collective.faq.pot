@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-09-01 09:47+0000\n"
+"POT-Creation-Date: 2026-08-10 14:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,6 +27,7 @@ msgstr ""
 
 #: ../profiles/default/types/FAQ.xml
 #: ../profiles/default/types/FAQ_Item.xml
+#: ../profiles/upgrade_3001/types/FAQ.xml
 msgid "Edit"
 msgstr ""
 
@@ -36,11 +37,11 @@ msgstr ""
 msgid "FAQ"
 msgstr ""
 
-#: ../configure.zcml:23
+#: ../configure.zcml:22
 msgid "FAQ (collective.faq)"
 msgstr ""
 
-#: ../configure.zcml:32
+#: ../configure.zcml:31
 msgid "FAQ (collective.faq): uninstall"
 msgstr ""
 
@@ -50,7 +51,7 @@ msgstr ""
 msgid "FAQ Item"
 msgstr ""
 
-#: ../configure.zcml:23
+#: ../configure.zcml:22
 msgid "Installs the FAQ add-on."
 msgstr ""
 
@@ -62,19 +63,24 @@ msgstr ""
 msgid "More details on the question, if not evident from the title"
 msgstr ""
 
+#: ../browser/faq.pt:81
+msgid "More information"
+msgstr ""
+
 #: ../interfaces.py:23
 msgid "Question"
 msgstr ""
 
-#: ../browser/faq.pt:12
+#: ../browser/faq.pt:18
 msgid "Show/Hide all"
 msgstr ""
 
-#: ../configure.zcml:32
+#: ../configure.zcml:31
 msgid "Uninstalls the FAQ add-on."
 msgstr ""
 
 #: ../profiles/default/types/FAQ.xml
 #: ../profiles/default/types/FAQ_Item.xml
+#: ../profiles/upgrade_3001/types/FAQ.xml
 msgid "View"
 msgstr ""
