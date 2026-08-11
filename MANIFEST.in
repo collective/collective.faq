@@ -5,3 +5,4 @@ include *.png
 exclude requirements.txt
 exclude *cfg
 global-exclude *.pyc
+prune news

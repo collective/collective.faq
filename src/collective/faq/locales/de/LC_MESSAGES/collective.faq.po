@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: collective.faq 3\n"
-"POT-Creation-Date: 2025-09-01 09:47+0000\n"
+"POT-Creation-Date: 2026-08-10 14:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: Timo Stollenwerk <stollenwerk@kitconcept.com>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
@@ -25,6 +25,7 @@ msgstr "Detaillierte Frage"
 
 #: ../profiles/default/types/FAQ.xml
 #: ../profiles/default/types/FAQ_Item.xml
+#: ../profiles/upgrade_3001/types/FAQ.xml
 msgid "Edit"
 msgstr "Bearbeiten"
 
@@ -34,11 +35,11 @@ msgstr "Bearbeiten"
 msgid "FAQ"
 msgstr "FAQ"
 
-#: ../configure.zcml:23
+#: ../configure.zcml:22
 msgid "FAQ (collective.faq)"
 msgstr "FAQ (collective.faq)"
 
-#: ../configure.zcml:32
+#: ../configure.zcml:31
 msgid "FAQ (collective.faq): uninstall"
 msgstr "FAQ (collective.faq): deinstallieren"
 
@@ -48,7 +49,7 @@ msgstr "FAQ (collective.faq): deinstallieren"
 msgid "FAQ Item"
 msgstr "FAQ-Eintrag"
 
-#: ../configure.zcml:23
+#: ../configure.zcml:22
 msgid "Installs the FAQ add-on."
 msgstr "Installiert das FAQ Add-On."
 
@@ -60,19 +61,24 @@ msgstr "Einige aussagekräftige Sätze, die die Frage beantworten"
 msgid "More details on the question, if not evident from the title"
 msgstr "Details zur Fragestellung, sofern sie nicht aus dem Titel hervorgehen"
 
+#: ../browser/faq.pt:81
+msgid "More information"
+msgstr ""
+
 #: ../interfaces.py:23
 msgid "Question"
 msgstr "Frage"
 
-#: ../browser/faq.pt:12
+#: ../browser/faq.pt:18
 msgid "Show/Hide all"
 msgstr "Alles anzeigen/verbergen"
 
-#: ../configure.zcml:32
+#: ../configure.zcml:31
 msgid "Uninstalls the FAQ add-on."
 msgstr "Deinstalliert das FAQ-Add-On."
 
 #: ../profiles/default/types/FAQ.xml
 #: ../profiles/default/types/FAQ_Item.xml
+#: ../profiles/upgrade_3001/types/FAQ.xml
 msgid "View"
 msgstr "Ansicht"

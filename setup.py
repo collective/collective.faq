@@ -1,8 +1,6 @@
 """Installer for the collective.faq package."""
 
-from setuptools import find_packages
 from setuptools import setup
-
 
 long_description = "\n\n".join(
     [
@@ -15,7 +13,7 @@ long_description = "\n\n".join(
 
 setup(
     name="collective.faq",
-    version="3.1.2.dev0",
+    version="4.0.0.dev0",
     description="Plone addon package for managing FAQ sections",
     long_description=long_description,
     # Get more from https://pypi.org/classifiers/
@@ -32,6 +30,7 @@ setup(
         "Programming Language :: Python :: 3.11",
         "Programming Language :: Python :: 3.12",
         "Programming Language :: Python :: 3.13",
+        "Programming Language :: Python :: 3.14",
         "Operating System :: OS Independent",
         "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
     ],
@@ -40,9 +39,6 @@ setup(
     author_email="info@kitconcept.com",
     url="https://github.com/collective/collective.faq",
     license="GPL version 2",
-    packages=find_packages("src", exclude=["ez_setup"]),
-    namespace_packages=["collective"],
-    package_dir={"": "src"},
     include_package_data=True,
     zip_safe=False,
     install_requires=[
@@ -54,7 +50,6 @@ setup(
         "plone.supermodel",
         "Products.CMFPlone",
         "Products.GenericSetup>=1.8.2",
-        "setuptools",
         "zope.configuration>=6.0",
         "zope.deprecation",
         "zope.i18nmessageid",
