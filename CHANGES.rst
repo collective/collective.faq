@@ -1,3 +1,19 @@
+4.0.0 (2026-08-11)
+------------------
+
+Breaking changes:
+
+
+- Switch to native namespaces.  [maurits]
+
+
+Internal:
+
+
+- Update configuration files.
+  [plone devs]
+
+
 Changelog
 =========
 
